@@ -52,6 +52,12 @@
     justify-content: center;
     align-items: center;
     margin-left: 1rem;
+    transition:0.5s;
+    border: #000000 0.1rem solid;
+}
+.open-nav:hover {
+    background-color:#d65d0c;
+    border: #ffffff 0.1rem solid;
 }
 
 .cube-check {
@@ -70,7 +76,6 @@
     padding-top: 1rem;
     padding-right: 3rem;
 }
-
 
 .nav-link {
     display: flex;
@@ -1171,15 +1176,14 @@
 
     .open-nav {
         position: absolute;
-        top: 1rem;
-        right: 2.6rem;
+        top: 0.3rem;
+        right: 0rem;
         display: block;
         color: rgba(243, 190, 130, 0.911);
         text-align: center;
         width: 8rem;
         padding: 0.5rem;
         background-color: #3F1B03;
-        margin-top: 1rem;
         border-radius: 5%;
         -webkit-box-shadow: 5px 5px 15px 5px #000000;
         box-shadow: 5px 5px 15px 5px #000000;
@@ -1190,8 +1194,8 @@
         opacity: 0;
         visibility: hidden;
         position: absolute;
-        top: 5.5rem;
-        right: 1rem;
+        top: 3.5rem;
+        right: 0rem;
         display: flex;
         flex-direction: column;
         width: 11rem;
@@ -1199,25 +1203,8 @@
         padding: 1rem;
         margin: 0;
         border: #000000 0.2rem solid;
-        border-radius: 5%;
+        border-radius:5% 0% 0% 5%;
         background-color: #3F1B03;
-    }
-        .nav-links {
-        opacity: 0;
-        visibility: hidden;
-        position: absolute;
-        top: 5.5rem;
-        right: 1rem;
-        display: flex;
-        flex-direction: column;
-        width: 11rem;
-        height: auto;
-        padding: 1rem;
-        margin: 0;
-        border: #000000 0.2rem solid;
-        border-radius: 5%;
-        background-color: #3F1B03;
-
     }
 
     .nav-link {
@@ -1233,7 +1220,6 @@
         width: auto;
         height: 100%;
         color: rgba(243, 190, 130, 0.911);
-    
     }
     .nav-link-text:hover {
         background-color: #d65d0c;
@@ -1263,12 +1249,16 @@
         margin: 0;
         width: 100%;
     }
+    
     #check:checked ~ .nav-links {
         visibility:visible;
         opacity:100%;
+        -webkit-box-shadow: 5px 5px 15px 5px #000000;
+        box-shadow: 1px 1px 15px 1px #000000;
+        transition: 0.5s;
     }
-}
 
+}
 
 @media(max-width: 768px) {}
 
