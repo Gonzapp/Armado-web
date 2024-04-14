@@ -1,0 +1,128 @@
+/*Mapa*/
+.map-main-container-info {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+.map-main-container-tittle {
+    display: flex;
+    background-color: $color-base;
+    color: #FFF;
+    text-shadow: 5px 1px 0px rgba(8, 8, 8, 0.37);
+    align-items: center;
+}
+
+.map-main-h3 {
+    color: #FFF;
+    font-size: clamp(2rem, 1.043rem + 1.495vw, 2.8rem);
+    font-family: coffetea;
+    font-weight: 70;
+    text-decoration: none;
+    text-align: left;
+    background-color: rgba(165, 103, 11, 0.877);
+    text-shadow: 5px 1px 0px rgba(8, 8, 8, 0.37);
+    padding: 0.6rem 1rem 0.2rem 1rem;
+    border-radius: 10%;
+    margin: 2rem 0rem 0.5rem 2rem;
+    align-content: center;
+
+}
+
+.map-main-container-p {
+    font-size:clamp(1rem, 0.583rem + 0.868vw, 1.6rem);
+    line-height: clamp(1rem, 0.583rem + 0.868vw, 1.6rem);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    width: 90%;
+    word-spacing: 0.2rem;
+}
+
+.map-main-section-search {
+    background-color: rgba(128, 128, 128, 0);
+}
+
+.map-main-section-filtro-options {
+    text-align: center;
+}
+
+.map-main-filtro-option {
+    font-size: 30px;
+    text-align: center;
+    background-color: $color-base;
+    color: white;
+    border-color: #000000;
+    border-radius: 5%;
+    font-family: 'gfont';
+    padding: 0.4rem;
+    margin-bottom: 1rem;
+}
+
+.map-filtro-option-text {
+    font-family: 'gfont';
+}
+
+.map-main-container-section {
+    display: flex;
+    justify-content: center;
+}
+
+.map-main-section-details {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    background-color: rgba(184, 184, 184, 0.801);
+    padding: 1rem 0rem;
+    height: auto;
+}
+
+.map-main-section-results {
+    border: #ffffff groove 0.15rem;
+    width: 40%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+.map-main-section-result {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.4rem;
+    font-weight: 1px;
+    color: white;
+    text-align: center;
+    list-style-type: none;
+    text-decoration: overline rgb(172, 172, 172);
+    background-color: #6e6e6e8a;
+    padding: 1rem 2rem;
+    width: 100%;
+    
+
+}
+
+.map-scroll {
+    position: relative;
+    width: 40%;
+    height: 100%;
+}
+
+.map-main--section-map {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.mapa-container-img {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.map-main-section-img1 {
+    width: 25%;
+    height: 600px;
+    object-fit: cover;
+    border-radius: 5%;
+}

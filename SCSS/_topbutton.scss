@@ -1,0 +1,26 @@
+/*top Botton*/
+.botton {
+    position: relative;
+    position: sticky;
+    top: 10px;
+    bottom: 100px;
+    z-index: 10;
+    height: auto;
+    width: 100%;
+    justify-content: right;
+}
+
+
+.top-botton {
+    position: absolute;
+    right: 1.8rem;
+    height: auto;
+    width: clamp(2rem, 1.286rem + 1.905vw, 3rem);
+    background-color: #ffffff;
+    border-radius: 60%;
+
+    &:hover {
+        -webkit-box-shadow: 5px 5px 15px 5px #000000;
+        box-shadow: 1px 1px 15px 1px #000000;
+    }
+}

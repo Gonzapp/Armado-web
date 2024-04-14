@@ -1,0 +1,38 @@
+/*index*/
+.main-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+}
+
+.main-section-videos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 5%;
+    padding-left: 3%;
+    padding-right: 3%;
+    width: 100%;
+}
+
+.main-section-video1 {
+    width: 25vw;
+    object-fit: cover;
+    border-radius: 5%;
+    flex-direction: column;
+}
+
+.main-section-video2 {
+    width: 25vw;
+    object-fit: cover;
+    border-radius: 5%;
+    flex-flow: row wrap;
+}
+
+.main-section-video3 {
+    width: 25vw;
+    object-fit: cover;
+    border-radius: 5%;
+}

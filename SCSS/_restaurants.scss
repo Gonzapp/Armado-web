@@ -1,0 +1,384 @@
+.main-section1 {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.main-section1-tittle {
+    text-align: left;
+    color: white;
+    background-color: $color-base;
+    height: 100%;
+    font-family: 'coffetea';
+    font-size: clamp(1.5rem, 1.031rem + 1.25vw, 2.5rem);
+    font-variant: unset;
+    font-weight: 10;
+    text-decoration: underline;
+    display: flex;
+    border: 20px;
+    border-radius: 15%;
+    margin: 1% 1% 3% 5%;
+    padding: 1%;
+}
+
+/*section1*/
+
+.casa-del-te {
+    display: flex;
+    flex-wrap: wrap;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+}
+
+.main-section1-name {
+    display: flex;
+    text-align: center;
+    font-family: 'coffetea';
+    font-size: clamp(1.8rem, 1.238rem + 1.5vw, 3rem);
+    font-weight: 100;
+    background-color: #3f1b03ee;
+    color: white;
+    text-shadow: 2px 4px #000000;
+    padding: 0.5%;
+    border-radius: 10%;
+    margin-top: 1%;
+    margin-bottom: 2.5%;
+}
+
+.box-container-rest1 {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+.box-rest1 {
+    display: grid;
+    grid-template-columns: 2fr 2fr 2fr;
+    grid-template-rows: repeat(auto-fill);
+    border-radius: 3%;
+    background-color: #bbbbbbe0;
+    gap: 1%;
+    margin: 2%;
+    padding: 1.5rem;
+    height: 100vh;
+    grid-template-areas:
+        "img info map map"
+        "img info map map"
+        "img info map map";
+    align-content: center;
+    align-items: center;
+}
+
+.main-section1-rest-info {
+    display: flex;
+    grid-area: info;
+    padding: 1rem;
+    background-color: #bbbbbbe0;
+    border: #000000 solid 2px;
+    border-radius: 5%;
+    width: 100%;
+    height: 90vh;
+    margin: 0;
+}
+
+.main-section1-imgs {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 90vh;
+    grid-area: img;
+    gap: 1%;
+
+}
+
+.main-section1-img1 {
+    width: 100%;
+    height: 30%;
+    object-fit: cover;
+    border: black 0.1rem solid;
+    border-radius: 5%;
+
+}
+
+.main-section1-img2 {
+    width: 100%;
+    height: 30%;
+    object-fit: cover;
+    border: black 0.18rem solid;
+    border-radius: 5%;
+}
+
+.main-section1-img3 {
+    width: 100%;
+    height: 30%;
+    object-fit: cover;
+    border: black 0.1rem solid;
+    border-radius: 5%;
+}
+
+.main-box-map1 {
+    display: grid;
+    grid-template-rows: repeat(3, 1fr) 4fr;
+    grid-template-columns: 1fr 2fr;
+    grid-template-areas:
+        "map1 map4 "
+        "map2 map4 "
+        "map3 map4 "
+        "map4 map4 ";
+    justify-items: center;
+    margin: 1rem;
+    width: 100%;
+    height: 90vh;
+    grid-area: map;
+    margin: 0;
+}
+
+.main-section1-map {
+    grid-area: map;
+    width: 90%;
+    height: 100%;
+    border-radius: 5%;
+    order: 4;
+    grid-column: 1 / 4;
+    grid-row: 4 / 5;
+    align-self: self-start;
+}
+
+.main-section1-text1 {
+    margin: 0;
+    font-size: clamp(1rem, 0.583rem + 0.868vw, 1.6rem);
+    line-height: clamp(1rem, 0.583rem + 0.868vw, 1.6rem);
+    font-weight: 10;
+    font-family: 'Anta', sans-serif;
+}
+
+.main-section1-star {
+    font-size: clamp(2.5rem, -0.491rem + 4.673vw, 4rem);
+    color: yellow;
+    text-shadow: 5px 3px 10px #000000, 5px 3px 10px #000000;
+    order: 1;
+    grid-column: 1/4;
+    grid-row: 1 / 1;
+    align-self: flex-start;
+}
+
+.main-section1-local {
+    font-family: 'Anta', sans-serif;
+    font-size: clamp(1.2rem, 0.825rem + 1vw, 2rem);
+    color: #000000;
+    text-decoration: none;
+    font-style: italic;
+    text-align: center;
+    order: 2;
+    grid-column: 1/4;
+    grid-row: 2 / 2;
+    align-self: flex-start;
+}
+
+.main-section1-p {
+    display: block;
+    font-family: 'Anta', sans-serif;
+    font-size: clamp(0.9rem, 0.622rem + 0.579vw, 1.3rem);
+    color: #000000;
+    font-weight: 100px;
+    text-decoration: none;
+    order: 3;
+    height: auto;
+    width: 90%;
+    text-align: center;
+    order: 3;
+    grid-column: 1 / 4;
+    grid-row: 3 / 3;
+
+}
+
+.main-section1-texts {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 100%;
+    margin: 0;
+}
+
+/*section2*/
+.cloe {
+    display: flex;
+    flex-wrap: wrap;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+}
+
+.main-section2-name {
+    display: flex;
+    text-align: center;
+    font-family: 'coffetea';
+    font-size: clamp(1.8rem, 1.238rem + 1.5vw, 3rem);
+    font-weight: 100;
+    background-color: #3f1b03ee;
+    color: white;
+    text-shadow: 2px 4px #000000;
+    padding: 0.5%;
+    border-radius: 10%;
+    margin-top: 1%;
+    margin-bottom: 2.5%;
+}
+
+.box-container-rest2 {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+.box-rest2 {
+    display: grid;
+    grid-template-columns: 2fr 2fr 2fr;
+    grid-template-rows: repeat(auto-fill);
+    border-radius: 3%;
+    background-color: #bbbbbbe0;
+    gap: 1%;
+    margin: 2%;
+    padding: 1.5rem;
+    height: 100vh;
+    grid-template-areas:
+        "img info map map"
+        "img info map map"
+        "img info map map";
+    align-content: center;
+    align-items: center;
+}
+
+.main-section2-rest-info {
+    display: flex;
+    grid-area: info;
+    padding: 1rem;
+    background-color: #bbbbbbe0;
+    border: #000000 solid 2px;
+    border-radius: 5%;
+    width: 100%;
+    height: 90vh;
+    margin: 0;
+}
+
+.main-section2-imgs {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 90vh;
+    grid-area: img;
+    gap: 1%;
+
+}
+.main-section2-img1 {
+    width: 100%;
+    height: 30%;
+    object-fit: cover;
+    border: black 0.1rem solid;
+    border-radius: 5%;
+}
+
+.main-section2-img2 {
+    width: 100%;
+    height: 30%;
+    object-fit:cover;
+    border: black 0.1rem solid;
+    border-radius: 5%;
+}
+
+.main-section2-img3 {
+    width: 100%;
+    height: 30%;
+    object-fit: cover;
+    border: black 0.1rem solid;
+    border-radius: 5%;
+}
+
+.main-box-map2 {
+    display: grid;
+    grid-template-rows: repeat(3, 1fr) 4fr;
+    grid-template-columns: 1fr 2fr;
+    grid-template-areas:
+        "map1 map4 "
+        "map2 map4 "
+        "map3 map4 "
+        "map4 map4 ";
+    justify-items: center;
+    margin: 1rem;
+    width: 100%;
+    height: 90vh;
+    grid-area: map;
+    margin: 0;
+}
+
+.main-section2-map {
+    grid-area: map;
+    width: 90%;
+    height: 100%;
+    border-radius: 5%;
+    order: 4;
+    grid-column: 1 / 4;
+    grid-row: 4 / 5;
+    align-self:self-start;
+}
+
+
+
+.main-section2-text1 {
+    margin: 0;
+    font-size: clamp(1rem, 0.583rem + 0.868vw, 1.6rem);
+    line-height: clamp(1rem, 0.583rem + 0.868vw, 1.6rem);
+    font-weight: 10;
+    font-family: 'Anta', sans-serif;
+}
+
+.main-section2-star {
+    font-size: clamp(2.5rem, -0.491rem + 4.673vw, 4rem);
+    color: yellow;
+    text-shadow: 5px 3px 10px #000000, 5px 3px 10px #000000;
+    order: 1;
+    grid-column: 1/4;
+    grid-row: 1 / 1;
+    align-self: flex-start;
+}
+
+.main-section2-local {
+    font-family: 'Anta', sans-serif;
+    font-size: clamp(1.2rem, 0.825rem + 1vw, 2rem);
+    color: #000000;
+    text-decoration: none;
+    font-style: italic;
+    text-align: center;
+    order: 2;
+    grid-column: 1/4;
+    grid-row: 2 / 2;
+    align-self: flex-start;
+}
+
+.main-section2-p {
+    display: block;
+    font-family: 'Anta', sans-serif;
+    font-size: clamp(0.9rem, 0.622rem + 0.579vw, 1.3rem);
+    color: #000000;
+    font-weight: 100px;
+    text-decoration: none;
+    order: 3;
+    height: auto;
+    width: 90%;
+    text-align: center;
+    order: 3;
+    grid-column: 1 / 4;
+    grid-row: 3 / 3;
+}
+
+.main-section2-texts {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 100%;
+    margin: 0;
+}

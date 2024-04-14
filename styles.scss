@@ -1,0 +1,516 @@
+/* font family font size - font style - fpmt weight - text decoraction o text align  */
+
+@font-face {
+    font-family: handmaker;
+    src: url(/fuentes/hand_marker/handMarker.ttf);
+}
+
+@font-face {
+    font-family: kgfont;
+    src: url(./fuentes/kg.otf);
+    ;
+}
+
+@font-face {
+    font-family: coffetea;
+    src: url(./fuentes/coffetea/coffetea.ttf);
+    ;
+}
+
+@font-face {
+    font-family: coffedeco;
+    src: url(./fuentes/decorationcoffe/coffedecoration.ttf);
+    ;
+}
+
+* {
+    box-sizing: border-box;
+    border: 0;
+    padding: 0;
+    margin: 0;
+    ;
+}
+
+.body-background-img {
+    position: relative;
+    justify-content: center;
+    background-image: url(./Images/redes/background.jpg);
+}
+@import "./SCSS/variables";
+@import "./SCSS/nav";
+@import "./SCSS/logo";
+@import "./SCSS/firstInfoHome";
+@import "./SCSS/homevideos";
+@import "./SCSS/restaurants";
+@import "./SCSS/nosotrosinfo";
+@import "./SCSS/redes";
+@import "./SCSS/redesAside";
+@import "./SCSS/firstInfoRecomend";
+@import "./SCSS/formRecomends";
+@import "./SCSS/mapSelector";
+@import "./SCSS/mapSelector";
+@import "./SCSS/footer";
+@import "./SCSS/topbutton";
+
+
+@media(max-width: 992px) {
+    .logo-container {
+        margin-top: 0rem;
+    }
+
+    .nav-container-links {
+        background-color: transparent;
+    }
+
+    .open-nav {
+        position: absolute;
+        top: 0.3rem;
+        right: 0rem;
+        display: block;
+        color: rgba(243, 190, 130, 0.911);
+        text-align: center;
+        width: 20rem;
+        padding: 0.5rem;
+        background-color: $color-base;
+        border-radius: 5%;
+        -webkit-box-shadow: 5px 5px 15px 5px #000000;
+        box-shadow: 5px 5px 15px 5px #000000;
+        cursor: pointer;
+    }
+
+    .nav-links {
+        opacity: 0;
+        visibility: hidden;
+        position: absolute;
+        top: 3.5rem;
+        right: 0rem;
+        display: flex;
+        flex-direction: column;
+        width: 20rem;
+        height: auto;
+        padding: 1rem;
+        margin: 0;
+        border: #000000 0.2rem solid;
+        border-radius: 5% 0% 0% 5%;
+        background-color: $color-base;
+    }
+
+    .nav-link {
+        width: auto;
+        height: 100%;
+        justify-content: center;
+
+    }
+
+    .nav-link-text {
+        text-align: center;
+        flex-direction: row;
+        width: auto;
+        height: 100%;
+        color: rgba(243, 190, 130, 0.911);
+    }
+
+    .nav-link-text:hover {
+        background-color: #d65d0c;
+        padding: 0.2rem 0.3rem;
+        border-radius: 10%;
+    }
+
+    #check:checked~.nav-links {
+        visibility: visible;
+        opacity: 95%;
+        -webkit-box-shadow: 5px 5px 15px 5px #000000;
+        box-shadow: 1px 1px 15px 1px #000000;
+        transition: 0.5s;
+    }
+
+}
+
+@media(max-width: 768px) {
+    .open-nav {
+        width: 15rem;
+    }
+
+    .nav-links {
+        width: 15rem;
+    }
+    .box-container-rest1 {
+        margin: 0;
+        padding: 0;
+        border: 0;
+    }
+
+        /*index box-rest*/
+    .box-rest1 {
+        display: grid;
+        grid-template-columns: 2fr 2fr 2fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        border-radius: 3%;
+        background-color: rgba(173, 173, 173, 0.822);
+        height: 100%;
+        gap: 2%;
+        margin: 1%;
+        padding: 1%;
+        grid-template-areas:
+            "img img img "
+            "info info info"
+            "map map map";
+        align-content: center;
+        justify-content: center;
+    }
+
+    .main-section1-rest-info {
+        grid-area: info;
+        padding: 1rem;
+        background-color: #bbbbbbe0;
+        border: #000000 solid 2px;
+        border-radius: 5%;
+        width: 100%;
+        height: 100%;
+        margin: 0;
+    }
+
+    .main-section1-imgs {
+        grid-area: img;
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        height: 100%;
+        justify-content: space-around;
+        align-content: center;
+    }
+
+    .main-section1-img1 {
+        height: 80%;
+        width: 30%;
+        object-fit: cover;
+        border: black 0.1rem solid;
+        border-radius: 5%;
+    }
+
+    .main-section1-img2 {
+        height: 80%;
+        width: 30%;
+        object-fit: cover;
+        border: black 0.18rem solid;
+        border-radius: 5%;
+    }
+
+    .main-section1-img3 {
+        height: 80%;
+        width: 30%;
+        object-fit: cover;
+        border: black 0.1rem solid;
+        border-radius: 5%;
+    }
+
+    .main-box-map1 {
+        grid-area: map;
+        display: grid;
+        grid-template-rows: auto;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+            "map1 map4 "
+            "map2 map4 "
+            "map3 map4 "
+            "map3 map4 ";
+        align-content: space-around;
+        align-items: end;
+        justify-items: center;
+        width: 100%;
+        height: 90%;
+        padding: 1%;
+    }
+
+    .main-section1-map {
+        width: 90%;
+        height: 100%;
+        border-radius: 5%;
+        order: 4;
+        grid-area: map4;
+    }
+
+    .main-section1-texts {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        height: 100%;
+        width: 100%;
+        margin: 0;
+        align-items: center;
+        gap: 4%;
+    }
+
+
+    .main-section1-text1 {
+        margin: 0;
+        font-size: clamp(0.7rem, 0.486rem + 1.069vw, 1rem);
+        line-height: clamp(0.9rem, 0.544rem + 1.782vw, 1.4rem);
+        font-weight: 10;
+        font-family: 'Anta', sans-serif;
+    }
+
+
+    .main-section1-star {
+        font-size: clamp(2rem, -0.491rem + 4.673vw, 3rem);
+        color: yellow;
+        text-shadow: 5px 3px 10px #000000, 5px 3px 10px #000000;
+        order: 1;
+        grid-area: map1;
+    }
+
+    .main-section1-local {
+        grid-area: map2;
+        font-family: 'Anta', sans-serif;
+        font-size: clamp(0.7rem, 0.486rem + 1.069vw, 1rem);
+        color: #000000;
+        text-decoration: none;
+        font-style: italic;
+        text-align: center;
+        order: 2;
+    }
+
+    .main-section1-p {
+        grid-area: map3;
+        font-family: 'Anta', sans-serif;
+        font-size: 0.8rem;
+        color: #000000;
+        font-weight: 100px;
+        text-decoration: none;
+        order: 3;
+        height: auto;
+        width: 90%;
+        text-align: center;
+        order: 3;
+    }
+
+    .box-container-rest2 {
+        margin: 0;
+        padding: 0;
+        border: 0;
+    }
+
+    .box-rest2 {
+        display: grid;
+        grid-template-columns: 2fr 2fr 2fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        border-radius: 3%;
+        background-color: rgba(173, 173, 173, 0.822);
+        height: 100%;
+        gap: 2%;
+        margin: 1%;
+        padding: 1%;
+        grid-template-areas:
+            "img img img "
+            "info info info"
+            "map map map";
+        align-content: center;
+        justify-content: center;
+    }
+
+    .main-section2-rest-info {
+        grid-area: info;
+        padding: 1rem;
+        background-color: #bbbbbbe0;
+        border: #000000 solid 2px;
+        border-radius: 5%;
+        width: 100%;
+        height: 100%;
+        margin: 0;
+    }
+
+    .main-section2-imgs {
+        grid-area: img;
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        height: 100%;
+        justify-content: space-around;
+        align-content: center;
+    }
+
+    .main-section2-img1 {
+        height: 80%;
+        width: 30%;
+        object-fit: cover;
+        border: black 0.1rem solid;
+        border-radius: 5%;
+    }
+
+    .main-section2-img2 {
+        height: 80%;
+        width: 30%;
+        object-fit:cover;
+        border: black 0.18rem solid;
+        border-radius: 5%;
+    }
+
+    .main-section2-img3 {
+        height: 80%;
+        width: 30%;
+        object-fit: cover;
+        border: black 0.1rem solid;
+        border-radius: 5%;
+    }
+
+    .main-box-map2 {
+        grid-area: map;
+        display: grid;
+        grid-template-rows: auto;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+            "map1 map4 "
+            "map2 map4 "
+            "map3 map4 "
+            "map3 map4 ";
+        align-content: space-around;
+        align-items: end;
+        justify-items: center;
+        width: 100%;
+        height: 90%;
+        padding: 1%;
+    }
+
+    .main-section2-map {
+        width: 90%;
+        height: 100%;
+        border-radius: 5%;
+        order: 4;
+        grid-area: map4;
+    }
+
+
+    .main-section2-texts {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        height: 100%;
+        width: 100%;
+        margin: 0;
+        align-items: center;
+        gap: 4%;
+    }
+
+    .main-section2-text1 {
+        margin: 0;
+        font-size: clamp(0.7rem, 0.486rem + 1.069vw, 1rem);
+        line-height: clamp(0.9rem, 0.544rem + 1.782vw, 1.4rem);
+        font-weight: 10;
+        font-family: 'Anta', sans-serif;
+    }
+
+    .main-section2-star {
+        font-size: clamp(2rem, -0.491rem + 4.673vw, 3rem);
+        color: yellow;
+        text-shadow: 5px 3px 10px #000000, 5px 3px 10px #000000;
+        order: 1;
+        grid-area: map1;
+    }
+
+    .main-section2-local {
+        grid-area: map2;
+        font-family: 'Anta', sans-serif;
+        font-size: clamp(0.7rem, 0.486rem + 1.069vw, 1rem);
+        color: #000000;
+        text-decoration: none;
+        font-style: italic;
+        text-align: center;
+        order: 2;
+    }
+
+    .main-section2-p {
+        grid-area: map3;
+        font-family: 'Anta', sans-serif;
+        font-size: 0.8rem;
+        color: #000000;
+        font-weight: 100px;
+        text-decoration: none;
+        order: 3;
+        height: auto;
+        width: 90%;
+        text-align: center;
+        order: 3;
+    }
+
+/*Recomendanos*/
+    .recomendanos-main-container-form{
+        position: relative;
+        flex-direction: column;
+    }
+
+    .recomendanos-main-container-img1 {
+        visibility: hidden;
+        opacity: 0;
+    }
+
+    .recomendanos-main-opcions {
+        position: absolute;
+        width: 90%;
+        height: 90%;
+        background-color: #ffffff;
+        padding: 4rem 2rem;
+        background-image: url(./Images/recomendanos/form.jpg);
+    }
+
+    /*redes*/
+    .redes-main-container-info{
+        padding: 0;
+        margin: 0;
+        flex-direction: column;
+        background-color:transparent
+    }
+    .redes-main-container-p{
+        width: 90%;
+        height: 100%;
+        padding: 1rem;
+        font-size: 1rem;
+        word-spacing: 0.1rem;
+        border: #000000 0.1rem solid;
+        border-bottom: black 0.5rem solid;
+        border-radius: 5% 5% 0% 0%;
+    }
+
+    .main-container-img1{
+        height: 200px;
+        width: 90%;
+        border: #000000 0.1rem solid;
+        border-top: black 0.5rem solid;
+        border-radius: 0% 0% 5% 5%;
+        margin-bottom: 10%;
+    }
+
+    .redes-container-links{
+        height: auto;
+        width: 100%;
+        z-index: 3;
+        bottom: 200px;
+    }
+
+    .aside-container-p {
+        text-align: center;
+        font-family: "Architects Daughter", cursive;
+        font-size: clamp(0.8rem, 0.514rem + 1.429vw, 1.2rem);
+        word-spacing: 0,3rem;
+        letter-spacing: 0.1rem;
+        word-spacing: 0px;
+        color: #FFF;
+        font-weight: 100px;
+        font-style: oblique;
+        font-variant: normal;
+        text-transform: none;
+        padding: 1rem;
+        background-color: $color-base;
+    }
+}   
+
+
+@media(max-width: 480px) {
+    .open-nav {
+        width: 8rem;
+    }
+
+    .nav-links {
+        width: 11rem;
+    }
+
+}
