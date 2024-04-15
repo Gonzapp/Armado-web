@@ -21,6 +21,13 @@
     padding: 2rem 0;
     margin: 2rem 0;
     gap: 0;
+
+    @media(max-width: 768px) {
+        padding: 0;
+        margin: 0;
+        flex-direction: column;
+        background-color:transparent
+    }
 }
 
 .redes-main-container-p {
@@ -38,6 +45,17 @@
     border-right: black 0.5rem solid;
     align-content: center;
     justify-content: center;
+
+    @media(max-width: 768px) {
+        width: 90%;
+        height: 100%;
+        padding: 1rem;
+        font-size: 1rem;
+        word-spacing: 0.1rem;
+        border: #000000 0.1rem solid;
+        border-bottom: black 0.5rem solid;
+        border-radius: 5% 5% 0% 0%;
+    }
 }
 
 .redes-container-links {
@@ -47,6 +65,14 @@
     width: 90%;
     height: 100%;
     margin-bottom: 2rem;
+
+    @media(max-width: 768px) {
+       height: auto;
+        width: 100%;
+        z-index: 3;
+        bottom: 200px;
+    }
+
 }
 
 .redes-container-link {
@@ -65,4 +91,13 @@
     border-radius: 5%;
     border: #000000 0.1rem solid;
     border-left: black 0.5rem solid;
+
+    @media(max-width: 768px) {
+        height: 200px;
+        width: 90%;
+        border: #000000 0.1rem solid;
+        border-top: black 0.5rem solid;
+        border-radius: 0% 0% 5% 5%;
+        margin-bottom: 10%;
+    }
 }

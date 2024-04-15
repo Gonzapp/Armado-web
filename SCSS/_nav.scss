@@ -4,6 +4,9 @@
     background-color: $color-base;
     align-items: center;
     height: auto;
+    @media(max-width: 992px) {
+        background-color: transparent;
+    }
 }
 
 .open-nav {
@@ -17,12 +20,46 @@
     &:hover {
         background-color: #d65d0c;
         border: #ffffff 0.1rem solid;
+    }    
+
+    @media(max-width: 992px) {
+        position: absolute;
+        top: 0.3rem;
+        right: 0rem;
+        display: block;
+        color: rgba(243, 190, 130, 0.911);
+        text-align: center;
+        width: 20rem;
+        padding: 0.5rem;
+        background-color: $color-base;
+        border-radius: 5%;
+        -webkit-box-shadow: 5px 5px 15px 5px #000000;
+        box-shadow: 5px 5px 15px 5px #000000;
+        cursor: pointer;
     }
-    
+
+    @media(max-width: 768px) {
+        width: 15rem;
+    }
+
+    @media(max-width: 480px) {
+            width: 8rem;
+        }
 }
 
 .cube-check {
     opacity: 0;
+}
+
+#check{
+    @media(max-width: 992px) {
+    &:checked~.nav-links{        
+        visibility: visible;
+        opacity: 95%;
+        -webkit-box-shadow: 5px 5px 15px 5px #000000;
+        box-shadow: 1px 1px 15px 1px #000000;
+        transition: 0.5s;}
+    }
 }
 
 .nav-links {
@@ -37,6 +74,31 @@
     padding-right: 3rem;
     margin: 0;
     z-index: 10;
+
+    @media(max-width: 992px) {
+            opacity: 0;
+            visibility: hidden;
+            position: absolute;
+            top: 3.5rem;
+            right: 0rem;
+            display: flex;
+            flex-direction: column;
+            width: 20rem;
+            height: auto;
+            padding: 1rem;
+            margin: 0;
+            border: #000000 0.2rem solid;
+            border-radius: 5% 0% 0% 5%;
+            background-color: $color-base;
+    }
+
+    @media(max-width: 768px){
+            width: 15rem;
+    }
+
+    @media(max-width: 480px) {
+        width: 11rem;
+    }
 }
 
 .nav-link {
@@ -47,6 +109,12 @@
     font-style: normal;
     list-style: none;
     width: auto;
+
+    @media(max-width: 992px) {
+            width: auto;
+            height: 100%;
+            justify-content: center;
+        }
 }
 
 .nav-link-text {
@@ -55,10 +123,22 @@
     text-decoration: none;
     color: white;
     transition: 0.5s;
-
-    &:hover {
+    &:hover{
         background-color: #d65d0c;
         padding: 1rem 0.3rem;
         border-radius: 10%;
     }
+    @media(max-width: 992px) {
+        text-align: center;
+        flex-direction: row;
+        width: auto;
+        height: 100%;
+        color: rgba(243, 190, 130, 0.911);
+        &:hover{
+            background-color: #d65d0c;
+            padding: 0.5rem 0.1rem;
+            border-radius: 10%;
+        }
+    }
 }
+

@@ -12,4 +12,20 @@
     text-transform: none;
     padding: 1rem;
     background-color: #3f1b03d0;
+
+    @media(max-width: 768px) { 
+        text-align: center;
+        font-family: "Architects Daughter", cursive;
+        font-size: clamp(0.8rem, 0.514rem + 1.429vw, 1.2rem);
+        word-spacing: 0,3rem;
+        letter-spacing: 0.1rem;
+        word-spacing: 0px;
+        color: #FFF;
+        font-weight: 100px;
+        font-style: oblique;
+        font-variant: normal;
+        text-transform: none;
+        padding: 1rem;
+        background-color: $color-base;
+    }   
 }
