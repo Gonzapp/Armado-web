@@ -1,9 +1,10 @@
 .nav-container-links {
     display: flex;
     position: relative;
-    background-color: $color-base;
+    background-color:$color-solid;
     align-items: center;
     height: auto;
+    
     @media(max-width: 992px) {
         background-color: transparent;
     }
@@ -18,8 +19,8 @@
     border: #000000 0.1rem solid;
     z-index: 10;
     &:hover {
-        background-color: #d65d0c;
-        border: #ffffff 0.1rem solid;
+        background-color: $color-buttom;
+        border: white 0.1rem solid;
     }    
 
     @media(max-width: 992px) {
@@ -27,11 +28,11 @@
         top: 0.3rem;
         right: 0rem;
         display: block;
-        color: rgba(243, 190, 130, 0.911);
+        color: $color-base2;
         text-align: center;
         width: 20rem;
         padding: 0.5rem;
-        background-color: $color-base;
+        background-color: $color-solid;
         border-radius: 5%;
         -webkit-box-shadow: 5px 5px 15px 5px #000000;
         box-shadow: 5px 5px 15px 5px #000000;
@@ -45,6 +46,11 @@
     @media(max-width: 480px) {
             width: 8rem;
         }
+            
+    i{
+    letter-spacing: 5px;
+    font-size: 0.6rem;    
+        }
 }
 
 .cube-check {
@@ -55,10 +61,11 @@
     @media(max-width: 992px) {
     &:checked~.nav-links{        
         visibility: visible;
-        opacity: 95%;
+        opacity: 100%;
         -webkit-box-shadow: 5px 5px 15px 5px #000000;
         box-shadow: 1px 1px 15px 1px #000000;
         transition: 0.5s;}
+        background-color: $color-solid;
     }
 }
 
@@ -115,30 +122,32 @@
             height: 100%;
             justify-content: center;
         }
-}
 
-.nav-link-text {
-    display: block;
-    font-size: clamp(1rem, 0.581rem + 0.654vw, 1.35rem);
-    text-decoration: none;
-    color: white;
-    transition: 0.5s;
-    &:hover{
-        background-color: #d65d0c;
-        padding: 1rem 0.3rem;
-        border-radius: 10%;
-    }
-    @media(max-width: 992px) {
-        text-align: center;
-        flex-direction: row;
-        width: auto;
-        height: 100%;
-        color: rgba(243, 190, 130, 0.911);
+    a{
+        display: block;
+        font-size: clamp(1rem, 0.581rem + 0.654vw, 1.35rem);
+        text-decoration: none;
+        color: white;
+        transition: 0.5s;
         &:hover{
-            background-color: #d65d0c;
-            padding: 0.5rem 0.1rem;
+            background-color: $color-buttom;
+            padding: 1rem 0.3rem;
             border-radius: 10%;
         }
-    }
+        
+        @media(max-width: 992px) {
+            text-align: center;
+            flex-direction: row;
+            width: auto;
+            height: 100%;
+            color: rgba(243, 190, 130, 0.911);
+            &:hover{
+                background-color: $color-buttom;
+                padding: 0.5rem 0.1rem;
+                border-radius: 10%;
+            }
+        }
+    }        
 }
+
 

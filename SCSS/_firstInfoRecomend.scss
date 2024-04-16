@@ -1,22 +1,9 @@
 /*Recomendanos*/
 .recomendanos-main-container-info {
   display: flex;
-  width: 100%;
-  justify-content: center;
-}
-
-.rcmndns-tittle {
-  width: -moz-max-content;
-  width: max-content;
+  justify-content:space-around;
 }
 
 .recomendanos-main-container-p {
-  font-size: clamp(1rem, 0.583rem + 0.868vw, 1.6rem);
-  line-height: clamp(1rem, 0.583rem + 0.868vw, 1.6rem);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 1rem;
-  width: 90%;
-  word-spacing: 0.2rem;
-}/*# sourceMappingURL=firstInfoRecomend.css.map */
+  @extend %p-principal;
+}

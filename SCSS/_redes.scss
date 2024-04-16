@@ -1,23 +1,16 @@
 /*Redes*/
 
 .redes-main-container-tittle {
-    display: flex;
-    justify-content: left;
-    width: max-content;
-    background-color: $color-base;
-    color: #FFF;
-    text-shadow: 5px 1px 0px rgba(8, 8, 8, 0.37);
-    padding: 1rem;
-    margin-left: 2rem;
+    @extend %title-h2;
 }
 
 .redes-main-container-info {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    align-items: center;
     background-color: rgba(184, 184, 184, 0.801);
     width: 100%;
+    height: 70vh;
     padding: 2rem 0;
     margin: 2rem 0;
     gap: 0;
@@ -25,6 +18,7 @@
     @media(max-width: 768px) {
         padding: 0;
         margin: 0;
+        align-items: center;
         flex-direction: column;
         background-color:transparent
     }
@@ -33,18 +27,18 @@
 .redes-main-container-p {
     display: block;
     text-align: left;
+    align-content: center;
+    justify-content: center;
     padding: 0rem 2rem;
     font-size: clamp(1.05rem, 0.532rem + 1.079vw, 1.8rem);
     word-spacing:clamp(0.2rem, -0.032rem + 0.48vw, 0.4rem);
     letter-spacing:0.1rem;
     margin: 0;
-    height: 30rem;
+    height: 100%;
     width: 40%;
     border-radius: 5%;
     border: #000000 0.1rem solid;
     border-right: black 0.5rem solid;
-    align-content: center;
-    justify-content: center;
 
     @media(max-width: 768px) {
         width: 90%;
@@ -60,9 +54,9 @@
 
 .redes-container-links {
     display: flex;
-    flex-flow: row wrap;
+    flex-direction: row;
     justify-content: space-around;
-    width: 90%;
+    width: 100%;
     height: 100%;
     margin-bottom: 2rem;
 
@@ -84,8 +78,7 @@
 }
 
 .main-container-img1 {
-    align-items: center;
-    height: 30rem;
+    height: 100%;
     width: 40%;
     object-fit: cover;
     border-radius: 5%;
@@ -93,7 +86,7 @@
     border-left: black 0.5rem solid;
 
     @media(max-width: 768px) {
-        height: 200px;
+        min-height: 12rem;
         width: 90%;
         border: #000000 0.1rem solid;
         border-top: black 0.5rem solid;

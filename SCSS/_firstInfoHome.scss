@@ -1,18 +1,14 @@
 /*Main*/
-.main-container-info {
+.main-container-info{
     display: flex;
     justify-content: center;
-    gap: 1.5rem;
-    flex-wrap: wrap;
 }
 
 .main-container-title {
-    justify-content: center;
-    display: flex;
     text-align: center;
     font-family: 'coffetea';
     color: white;
-    background-color: $color-base;
+    background-color: $color-solid;
     font-size: clamp(1.6rem, 1.415rem + 0.923vw, 2.5rem);
     font-variant: unset;
     font-weight: 10;
@@ -21,51 +17,25 @@
     border-radius: 20%;
     border: 10%;
     padding: 1%;
-    margin-left: 6%;
     margin-bottom: 1rem;
     height: auto;
+
 }
 
-.main-container-text {
+.main-container-text{
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
 }
 
 .main-container-p {
-    display: flex;
-    justify-content: center;
-    width: 95%;
-    text-align: center;
-    font-family: "Architects Daughter", cursive;
-    font-size: clamp(0.7rem, 0.454rem + 1.231vw, 1.9rem);
-    letter-spacing: 0.2rem;
-    word-spacing: -0.2rem;
-    color: #000000;
-    font-weight: 10px;
-    font-style: none;
-    background-color: rgba(243, 190, 130, 0.911);
-    padding: 1rem 0.3rem 0.2rem 0.3rem;
-    border: #000000 2px groove;
-    border-radius: 15%;
+    @extend %p-principal;
     margin: 2% 0rem 3% 0rem;
 }
 
-.line {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
 .main-line {
-    position: relative;
-    display: flex;
-    flex-wrap: wrap;
     text-align: center;
-    align-items: center;
     width: 80%;
     border-radius: 50%;
     border-bottom: 5px black solid;
     margin: 3%;
-    justify-content: center;
 }

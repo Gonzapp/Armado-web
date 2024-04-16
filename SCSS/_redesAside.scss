@@ -5,7 +5,7 @@
     font-size: clamp(1.2rem, 0.243rem + 1.495vw, 2rem);
     letter-spacing: 3px;
     word-spacing: 0px;
-    color: #FFF;
+    color: white;
     font-weight: 100px;
     font-style: oblique;
     font-variant: normal;
@@ -16,11 +16,11 @@
     @media(max-width: 768px) { 
         text-align: center;
         font-family: "Architects Daughter", cursive;
-        font-size: clamp(0.8rem, 0.514rem + 1.429vw, 1.2rem);
-        word-spacing: 0,3rem;
-        letter-spacing: 0.1rem;
-        word-spacing: 0px;
-        color: #FFF;
+        font-size: clamp(0.7rem, 0.454rem + 1.231vw, 1.9rem);
+        letter-spacing: 0.2rem;
+        word-spacing: -0.2rem;
+        font-weight: 10px;
+        color: white;
         font-weight: 100px;
         font-style: oblique;
         font-variant: normal;

@@ -6,42 +6,26 @@
 }
 
 .map-main-container-tittle {
-    display: flex;
-    background-color: $color-base;
-    color: #FFF;
-    text-shadow: 5px 1px 0px rgba(8, 8, 8, 0.37);
-    align-items: center;
+@extend %title-h2
 }
 
 .map-main-h3 {
     color: #FFF;
-    font-size: clamp(2rem, 1.043rem + 1.495vw, 2.8rem);
+    font-size: clamp(1.5rem, 1.031rem + 1.25vw, 2.5rem);
     font-family: coffetea;
     font-weight: 70;
     text-decoration: none;
     text-align: left;
-    background-color: rgba(165, 103, 11, 0.877);
+    background-color: $color-h3;
     text-shadow: 5px 1px 0px rgba(8, 8, 8, 0.37);
     padding: 0.6rem 1rem 0.2rem 1rem;
     border-radius: 10%;
-    margin: 2rem 0rem 0.5rem 2rem;
+    margin: 2rem 0rem 2rem 0rem;
     align-content: center;
-
 }
 
 .map-main-container-p {
-    font-size:clamp(1rem, 0.583rem + 0.868vw, 1.6rem);
-    line-height: clamp(1rem, 0.583rem + 0.868vw, 1.6rem);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 1rem;
-    width: 90%;
-    word-spacing: 0.2rem;
-}
-
-.map-main-section-search {
-    background-color: rgba(128, 128, 128, 0);
+    @extend %p-principal;
 }
 
 .map-main-section-filtro-options {
@@ -74,13 +58,13 @@
     flex-direction: row;
     justify-content: center;
     width: 100%;
-    background-color: rgba(184, 184, 184, 0.801);
+    background-color: $color-contraste;
     padding: 1rem 0rem;
     height: auto;
 }
 
 .map-main-section-results {
-    border: #ffffff groove 0.15rem;
+    border: white groove 0.15rem;
     width: 40%;
     height: 100%;
     padding: 0;
@@ -94,12 +78,10 @@
     color: white;
     text-align: center;
     list-style-type: none;
-    text-decoration: overline rgb(172, 172, 172);
-    background-color: #6e6e6e8a;
+    text-decoration: overline $color-contraste;
+    background-color: $color-contraste2;
     padding: 1rem 2rem;
     width: 100%;
-    
-
 }
 
 .map-scroll {
@@ -122,7 +104,7 @@
 
 .map-main-section-img1 {
     width: 25%;
-    height: 600px;
+    height: 100%;
     object-fit: cover;
     border-radius: 5%;
 }

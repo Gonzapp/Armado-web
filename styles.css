@@ -1,4 +1,3 @@
-/* font family font size - font style - fpmt weight - text decoraction o text align  */
 @font-face {
   font-family: handmaker;
   src: url(/fuentes/hand_marker/handMarker.ttf);
@@ -28,9 +27,62 @@
   background-image: url(./Images/redes/background.jpg);
 }
 
-/*Color secundario oscuro*/
-/*Color secundario claro*/
-/*Fondo gris contrate*/
+.map-main-container-p, .recomendanos-main-container-p, .nosotros-main-container-p, .nosotros-main-container-p1, .main-container-p {
+  font-family: "Architects Daughter", cursive;
+  color: #000000;
+  font-size: clamp(0.7rem, 0.454rem + 1.231vw, 1.9rem);
+  letter-spacing: 0.2rem;
+  word-spacing: -0.2rem;
+  font-weight: 10px;
+  font-style: none;
+  font-weight: 10px;
+  text-align: center;
+  background-color: rgba(243, 190, 130, 0.911);
+  width: 95%;
+  padding: 1.3rem 0.3rem 1.3rem 0.3rem;
+  border: #000000 2px groove;
+  border-radius: 15%;
+}
+
+.map-main-container-tittle, .recomendanos-tittle, .redes-main-container-tittle, .nosotros-main-tittle, .main-section1-tittle {
+  text-align: left;
+  color: white;
+  background-color: #3F1B03;
+  height: 100%;
+  width: -moz-max-content;
+  width: max-content;
+  font-family: "coffetea";
+  font-size: clamp(1.5rem, 1.031rem + 1.25vw, 2.5rem);
+  font-variant: unset;
+  font-weight: 10;
+  text-decoration: underline;
+  border: 20px;
+  border-radius: 15%;
+  margin: 1% 1% 5% 5%;
+  padding: 1%;
+}
+
+.main-section2-name, .main-section1-name {
+  display: flex;
+  text-align: center;
+  font-family: "coffetea";
+  font-size: clamp(1.8rem, 1.238rem + 1.5vw, 3rem);
+  font-weight: 100;
+  background-color: rgba(63, 27, 3, 0.9333333333);
+  color: white;
+  text-shadow: 2px 4px #000000;
+  padding: 0.5%;
+  border-radius: 10%;
+  margin-top: 1%;
+  margin-bottom: 2.5%;
+}
+
+.main-section2-star, .main-section1-star {
+  font-size: clamp(2.5rem, -0.491rem + 4.673vw, 4rem);
+  color: yellow;
+  text-shadow: 5px 3px 10px #000000, 5px 3px 10px #000000;
+}
+
 .nav-container-links {
   display: flex;
   position: relative;
@@ -54,8 +106,8 @@
   z-index: 10;
 }
 .open-nav:hover {
-  background-color: #d65d0c;
-  border: #ffffff 0.1rem solid;
+  background-color: #e2610a;
+  border: white 0.1rem solid;
 }
 @media (max-width: 992px) {
   .open-nav {
@@ -63,7 +115,7 @@
     top: 0.3rem;
     right: 0rem;
     display: block;
-    color: rgba(243, 190, 130, 0.911);
+    color: rgba(243, 190, 130, 0.9333333333);
     text-align: center;
     width: 20rem;
     padding: 0.5rem;
@@ -83,15 +135,22 @@
     width: 8rem;
   }
 }
+.open-nav i {
+  letter-spacing: 5px;
+  font-size: 0.6rem;
+}
 
 .cube-check {
   opacity: 0;
 }
 
 @media (max-width: 992px) {
+  #check {
+    background-color: #3F1B03;
+  }
   #check:checked ~ .nav-links {
     visibility: visible;
-    opacity: 95%;
+    opacity: 100%;
     box-shadow: 1px 1px 15px 1px #000000;
     transition: 0.5s;
   }
@@ -125,7 +184,7 @@
     margin: 0;
     border: #000000 0.2rem solid;
     border-radius: 5% 0% 0% 5%;
-    background-color: #3F1B03;
+    background-color: rgba(63, 27, 3, 0.9333333333);
   }
 }
 @media (max-width: 768px) {
@@ -155,29 +214,28 @@
     justify-content: center;
   }
 }
-
-.nav-link-text {
+.nav-link a {
   display: block;
   font-size: clamp(1rem, 0.581rem + 0.654vw, 1.35rem);
   text-decoration: none;
   color: white;
   transition: 0.5s;
 }
-.nav-link-text:hover {
-  background-color: #d65d0c;
+.nav-link a:hover {
+  background-color: #e2610a;
   padding: 1rem 0.3rem;
   border-radius: 10%;
 }
 @media (max-width: 992px) {
-  .nav-link-text {
+  .nav-link a {
     text-align: center;
     flex-direction: row;
     width: auto;
     height: 100%;
     color: rgba(243, 190, 130, 0.911);
   }
-  .nav-link-text:hover {
-    background-color: #d65d0c;
+  .nav-link a:hover {
+    background-color: #e2610a;
     padding: 0.5rem 0.1rem;
     border-radius: 10%;
   }
@@ -185,7 +243,7 @@
 
 .logo-container {
   display: flex;
-  flex-flow: row wrap;
+  flex-direction: row;
   margin: 2rem 0rem 2rem 1rem;
 }
 @media (max-width: 992px) {
@@ -196,28 +254,26 @@
 
 .logo-section {
   display: flex;
-  flex-direction: row;
-  justify-content: left;
   align-items: center;
   gap: 0.2rem;
+  align-content: center;
 }
 
 .logo-text {
   display: flex;
-  flex-wrap: wrap;
   font-family: "coffetea";
   align-items: center;
   font-size: clamp(1rem, 1.266rem + 0.625vw, 2rem);
   font-size: clamp(1.3rem, 1.266rem + 0.625vw, 2rem);
-  color: #DFC599;
-  text-shadow: 0 -1px 4px #3F1B03, 0 -10px 20px rgba(255, 128, 0, 0.7333333333), 0 -18px 40px rgba(255, 0, 0, 0.719), -40px -21px 0px rgba(206, 29, 29, 0);
-  background-color: #3F1B03;
+  color: rgba(243, 190, 130, 0.9333333333);
+  text-shadow: 0 -1px 4px rgba(63, 27, 3, 0.9333333333), 0 -10px 20px rgba(255, 128, 0, 0.7333333333), 0 -18px 40px rgba(255, 0, 0, 0.719), -40px -21px 0px rgba(206, 29, 29, 0);
+  background-color: rgba(63, 27, 3, 0.9333333333);
   border-radius: 10%;
-  padding: 0.8rem 0.4rem 0 0.4rem;
+  padding: 0.3rem 0.5rem 0.3rem 0.5rem;
+  margin: 0;
 }
 
 .logo-img {
-  display: flex;
   width: clamp(3rem, 2.063rem + 2.5vw, 5rem);
   height: auto;
 }
@@ -226,13 +282,9 @@
 .main-container-info {
   display: flex;
   justify-content: center;
-  gap: 1.5rem;
-  flex-wrap: wrap;
 }
 
 .main-container-title {
-  justify-content: center;
-  display: flex;
   text-align: center;
   font-family: "coffetea";
   color: white;
@@ -245,91 +297,50 @@
   border-radius: 20%;
   border: 10%;
   padding: 1%;
-  margin-left: 6%;
   margin-bottom: 1rem;
   height: auto;
 }
 
 .main-container-text {
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
 }
 
 .main-container-p {
-  display: flex;
-  justify-content: center;
-  width: 95%;
-  text-align: center;
-  font-family: "Architects Daughter", cursive;
-  font-size: clamp(0.7rem, 0.454rem + 1.231vw, 1.9rem);
-  letter-spacing: 0.2rem;
-  word-spacing: -0.2rem;
-  color: #000000;
-  font-weight: 10px;
-  font-style: none;
-  background-color: rgba(243, 190, 130, 0.911);
-  padding: 1rem 0.3rem 0.2rem 0.3rem;
-  border: #000000 2px groove;
-  border-radius: 15%;
   margin: 2% 0rem 3% 0rem;
 }
 
-.line {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
 .main-line {
-  position: relative;
-  display: flex;
-  flex-wrap: wrap;
   text-align: center;
-  align-items: center;
   width: 80%;
   border-radius: 50%;
   border-bottom: 5px black solid;
   margin: 3%;
-  justify-content: center;
 }
 
 /*index*/
-.main-section {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  align-self: center;
-}
-
 .main-section-videos {
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
   gap: 5%;
   padding-left: 3%;
   padding-right: 3%;
   width: 100%;
+  margin: 2% 0% 2% 0%;
 }
-
-.main-section-video1 {
+.main-section-videos video:nth-child(1) {
   width: 25vw;
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 5%;
-  flex-direction: column;
 }
-
-.main-section-video2 {
+.main-section-videos video:nth-child(2) {
   width: 25vw;
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 5%;
-  flex-flow: row wrap;
 }
-
-.main-section-video3 {
+.main-section-videos video:nth-child(3) {
   width: 25vw;
   -o-object-fit: cover;
      object-fit: cover;
@@ -338,49 +349,21 @@
 
 .main-section1 {
   display: flex;
-  flex-wrap: wrap;
-  width: 100%;
+  flex-direction: column;
 }
 
-.main-section1-tittle {
-  text-align: left;
-  color: white;
-  background-color: #3F1B03;
-  height: 100%;
-  font-family: "coffetea";
-  font-size: clamp(1.5rem, 1.031rem + 1.25vw, 2.5rem);
-  font-variant: unset;
-  font-weight: 10;
-  text-decoration: underline;
+.line {
   display: flex;
-  border: 20px;
-  border-radius: 15%;
-  margin: 1% 1% 3% 5%;
-  padding: 1%;
+  justify-content: center;
+}
+.line div {
+  align-items: center;
 }
 
 /*section1*/
 .casa-del-te {
   display: flex;
-  flex-wrap: wrap;
-  height: 100%;
-  width: 100%;
   justify-content: center;
-}
-
-.main-section1-name {
-  display: flex;
-  text-align: center;
-  font-family: "coffetea";
-  font-size: clamp(1.8rem, 1.238rem + 1.5vw, 3rem);
-  font-weight: 100;
-  background-color: rgba(63, 27, 3, 0.9333333333);
-  color: white;
-  text-shadow: 2px 4px #000000;
-  padding: 0.5%;
-  border-radius: 10%;
-  margin-top: 1%;
-  margin-bottom: 2.5%;
 }
 
 .box-container-rest1 {
@@ -593,9 +576,6 @@
 }
 
 .main-section1-star {
-  font-size: clamp(2.5rem, -0.491rem + 4.673vw, 4rem);
-  color: yellow;
-  text-shadow: 5px 3px 10px #000000, 5px 3px 10px #000000;
   order: 1;
   grid-column: 1/4;
   grid-row: 1/1;
@@ -604,8 +584,6 @@
 @media (max-width: 768px) {
   .main-section1-star {
     font-size: clamp(2rem, -0.491rem + 4.673vw, 3rem);
-    color: yellow;
-    text-shadow: 5px 3px 10px #000000, 5px 3px 10px #000000;
     order: 1;
     grid-area: map1;
   }
@@ -696,21 +674,6 @@
   justify-content: center;
 }
 
-.main-section2-name {
-  display: flex;
-  text-align: center;
-  font-family: "coffetea";
-  font-size: clamp(1.8rem, 1.238rem + 1.5vw, 3rem);
-  font-weight: 100;
-  background-color: rgba(63, 27, 3, 0.9333333333);
-  color: white;
-  text-shadow: 2px 4px #000000;
-  padding: 0.5%;
-  border-radius: 10%;
-  margin-top: 1%;
-  margin-bottom: 2.5%;
-}
-
 .box-container-rest2 {
   margin: 0;
   padding: 0;
@@ -744,7 +707,7 @@
     grid-template-columns: 2fr 2fr 2fr;
     grid-template-rows: 1fr 1fr 1fr;
     border-radius: 3%;
-    background-color: rgba(173, 173, 173, 0.822);
+    background-color: rgba(187, 187, 187, 0.8784313725);
     height: 100%;
     gap: 2%;
     margin: 1%;
@@ -921,9 +884,6 @@
 }
 
 .main-section2-star {
-  font-size: clamp(2.5rem, -0.491rem + 4.673vw, 4rem);
-  color: yellow;
-  text-shadow: 5px 3px 10px #000000, 5px 3px 10px #000000;
   order: 1;
   grid-column: 1/4;
   grid-row: 1/1;
@@ -932,8 +892,6 @@
 @media (max-width: 768px) {
   .main-section2-star {
     font-size: clamp(2rem, -0.491rem + 4.673vw, 3rem);
-    color: yellow;
-    text-shadow: 5px 3px 10px #000000, 5px 3px 10px #000000;
     order: 1;
     grid-area: map1;
   }
@@ -1011,109 +969,60 @@
     width: 100%;
     margin: 0;
     align-items: center;
-    gap: 4%;
+    gap: 1%;
   }
 }
 
 /*Nosotros*/
-.nosotros-main-container {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
-}
-
 .nosotros-main-container-info {
   display: flex;
   flex-flow: row wrap;
-  align-content: center;
   justify-content: center;
-  text-align: center;
-  font-variant: unset;
-  font-weight: 10;
-  letter-spacing: none;
-  word-spacing: none;
-  color: #000000;
-  font-weight: 100px;
-  font-style: normal;
-  font-variant: normal;
-  text-transform: none;
 }
 
 .nosotros-main-container-info1 {
   display: flex;
-  flex-flow: row wrap;
-  align-content: center;
-  justify-content: center;
-  text-align: center;
-  font-variant: unset;
-  font-weight: 10;
-  letter-spacing: none;
-  word-spacing: none;
-  color: #000000;
-  font-weight: 100px;
-  font-style: normal;
-  font-variant: normal;
-  text-transform: none;
-}
-
-.nosotros-main-container-tittle {
-  font-size: clamp(2rem, 1.043rem + 1.495vw, 2.8rem);
-  font-family: coffetea;
-  font-weight: 70;
-  display: flex;
-  background-color: #3F1B03;
-  color: #FFF;
-  text-shadow: 5px 1px 0px rgba(8, 8, 8, 0.37);
-  align-items: center;
+  flex-direction: column;
+  justify-content: space-around;
 }
 
 .nosotros-main-h3 {
-  color: #FFF;
-  font-size: clamp(2rem, 1.043rem + 1.495vw, 2.8rem);
-  font-family: coffetea;
-  font-weight: 70;
+  align-self: flex-start;
+  color: white;
+  background-color: rgba(165, 103, 11, 0.8823529412);
+  height: 100%;
+  width: -moz-max-content;
+  width: max-content;
+  font-family: "coffetea";
+  font-size: clamp(0.8rem, 0.451rem + 1.744vw, 2.5rem);
+  font-variant: unset;
+  font-weight: 10;
   text-decoration: none;
-  text-align: left;
-  background-color: rgba(165, 103, 11, 0.877);
-  text-shadow: 5px 1px 0px rgba(8, 8, 8, 0.37);
-  padding: 0.6rem 0rem 0.2rem 2rem;
-  border-radius: 10%;
-  margin-right: 50%;
+  border: 1px #3F1B03 solid;
+  border-radius: 15%;
+  margin: 1% 5% 2% 5%;
+  padding: 1%;
 }
 
 .nosotros-main-container-p {
+  display: flex;
+  justify-content: center;
+  align-self: center;
   font-family: "coffetea" sans-serif;
-  font-size: clamp(0.7rem, 0.454rem + 1.231vw, 1.9rem);
-  background-color: rgba(63, 27, 3, 0.937254902);
-  color: #FFF;
-  word-spacing: 0.3rem;
-  text-align: left;
-  text-shadow: 5px 1px 0px rgba(8, 8, 8, 0.37);
-  text-align: left;
-  padding-left: 2.4rem;
+  background-color: rgba(63, 27, 3, 0.9333333333);
+  color: white;
+  word-spacing: 0.2rem;
+  text-shadow: 4px 1px 0px rgba(0, 0, 0, 0.37);
 }
 
 /*Redes*/
-.redes-main-container-tittle {
-  display: flex;
-  justify-content: left;
-  width: -moz-max-content;
-  width: max-content;
-  background-color: #3F1B03;
-  color: #FFF;
-  text-shadow: 5px 1px 0px rgba(8, 8, 8, 0.37);
-  padding: 1rem;
-  margin-left: 2rem;
-}
-
 .redes-main-container-info {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  align-items: center;
   background-color: rgba(184, 184, 184, 0.801);
   width: 100%;
+  height: 70vh;
   padding: 2rem 0;
   margin: 2rem 0;
   gap: 0;
@@ -1122,6 +1031,7 @@
   .redes-main-container-info {
     padding: 0;
     margin: 0;
+    align-items: center;
     flex-direction: column;
     background-color: transparent;
   }
@@ -1130,18 +1040,18 @@
 .redes-main-container-p {
   display: block;
   text-align: left;
+  align-content: center;
+  justify-content: center;
   padding: 0rem 2rem;
   font-size: clamp(1.05rem, 0.532rem + 1.079vw, 1.8rem);
   word-spacing: clamp(0.2rem, -0.032rem + 0.48vw, 0.4rem);
   letter-spacing: 0.1rem;
   margin: 0;
-  height: 30rem;
+  height: 100%;
   width: 40%;
   border-radius: 5%;
   border: #000000 0.1rem solid;
   border-right: black 0.5rem solid;
-  align-content: center;
-  justify-content: center;
 }
 @media (max-width: 768px) {
   .redes-main-container-p {
@@ -1158,9 +1068,9 @@
 
 .redes-container-links {
   display: flex;
-  flex-flow: row wrap;
+  flex-direction: row;
   justify-content: space-around;
-  width: 90%;
+  width: 100%;
   height: 100%;
   margin-bottom: 2rem;
 }
@@ -1182,8 +1092,7 @@
 }
 
 .main-container-img1 {
-  align-items: center;
-  height: 30rem;
+  height: 100%;
   width: 40%;
   -o-object-fit: cover;
      object-fit: cover;
@@ -1193,7 +1102,7 @@
 }
 @media (max-width: 768px) {
   .main-container-img1 {
-    height: 200px;
+    min-height: 12rem;
     width: 90%;
     border: #000000 0.1rem solid;
     border-top: black 0.5rem solid;
@@ -1208,7 +1117,7 @@
   font-size: clamp(1.2rem, 0.243rem + 1.495vw, 2rem);
   letter-spacing: 3px;
   word-spacing: 0px;
-  color: #FFF;
+  color: white;
   font-weight: 100px;
   font-style: oblique;
   font-variant: normal;
@@ -1220,50 +1129,35 @@
   .aside-container-p {
     text-align: center;
     font-family: "Architects Daughter", cursive;
-    font-size: clamp(0.8rem, 0.514rem + 1.429vw, 1.2rem);
-    word-spacing: 0, 3rem;
-    letter-spacing: 0.1rem;
-    word-spacing: 0px;
-    color: #FFF;
+    font-size: clamp(0.7rem, 0.454rem + 1.231vw, 1.9rem);
+    letter-spacing: 0.2rem;
+    word-spacing: -0.2rem;
+    font-weight: 10px;
+    color: white;
     font-weight: 100px;
     font-style: oblique;
     font-variant: normal;
     text-transform: none;
     padding: 1rem;
-    background-color: #3F1B03;
+    background-color: rgba(63, 27, 3, 0.9333333333);
   }
 }
 
 /*Recomendanos*/
 .recomendanos-main-container-info {
   display: flex;
-  width: 100%;
-  justify-content: center;
+  justify-content: space-around;
 }
 
-.rcmndns-tittle {
-  width: -moz-max-content;
-  width: max-content;
-}
-
-.recomendanos-main-container-p {
-  font-size: clamp(1rem, 0.583rem + 0.868vw, 1.6rem);
-  line-height: clamp(1rem, 0.583rem + 0.868vw, 1.6rem);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 1rem;
-  width: 90%;
-  word-spacing: 0.2rem;
-} 
 .recomendanos-main-container-form {
-  background-color: rgba(128, 128, 128, 0.486);
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: rgba(187, 187, 187, 0.8784313725);
   width: 100%;
   height: 60rem;
   z-index: -5;
+  margin-top: 1.5rem;
 }
 @media (max-width: 768px) {
   .recomendanos-main-container-form {
@@ -1292,11 +1186,10 @@
 .recomendanos-main-opcions {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-around;
   align-content: center;
   width: 45%;
-  height: 90%;
-  background-color: #ffffff;
+  height: 54.2rem;
   padding: 4rem 2rem;
   border: #000000 0.1rem solid;
   border-left: black 0.5rem solid;
@@ -1310,7 +1203,7 @@
     position: absolute;
     width: 90%;
     height: 90%;
-    background-color: #ffffff;
+    background-color: white;
     padding: 4rem 2rem;
     background-image: url(./Images/recomendanos/form.jpg);
   }
@@ -1318,7 +1211,7 @@
 
 .recomendanos-main-opcions1 {
   display: flex;
-  flex-flow: column wrap;
+  justify-content: center;
 }
 
 .recomendanos-main-input {
@@ -1328,15 +1221,14 @@
   font-family: "andmaker";
   font-size: clamp(1.4rem, 1.114rem + 0.762vw, 1.8rem);
   color: rgba(0, 0, 0, 0.5490196078);
-  border: solid 0.125rem #3F1B03;
+  border: solid 0.125rem rgba(63, 27, 3, 0.9333333333);
   border-radius: 4%;
   padding-left: 1rem;
   transition: 0.1s;
   max-height: 10rem;
 }
-
 .recomendanos-main-input:focus {
-  border: solid 0.25rem #913e07;
+  border: solid 0.25rem #e2610a;
   outline: none;
 }
 
@@ -1347,21 +1239,20 @@
   text-align: center;
   font-family: "andmaker";
   font-size: clamp(1.5rem, 1.014rem + 1.295vw, 2.18rem);
-  color: #ca6725;
-  background-color: #3F1B03;
+  color: #e2610a;
+  background-color: rgba(63, 27, 3, 0.9333333333);
   padding: 0.65rem;
-  border: solid 0.3rem black;
+  border: solid 0.2rem rgba(63, 27, 3, 0.9333333333);
   width: 90%;
   transition: 0.5s;
 }
-
 .recomendanos-main-enviar:hover {
   color: white;
   background-color: #e2610a;
   width: 100%;
 }
 
-.recomendanos-main-container-title {
+.recomendanos-main-container-tittle {
   display: inline;
   font-size: clamp(1.4rem, 0.971rem + 1.143vw, 2rem);
   width: 100%;
@@ -1376,42 +1267,19 @@
   justify-content: center;
 }
 
-.map-main-container-tittle {
-  display: flex;
-  background-color: #3F1B03;
-  color: #FFF;
-  text-shadow: 5px 1px 0px rgba(8, 8, 8, 0.37);
-  align-items: center;
-}
-
 .map-main-h3 {
   color: #FFF;
-  font-size: clamp(2rem, 1.043rem + 1.495vw, 2.8rem);
+  font-size: clamp(1.5rem, 1.031rem + 1.25vw, 2.5rem);
   font-family: coffetea;
   font-weight: 70;
   text-decoration: none;
   text-align: left;
-  background-color: rgba(165, 103, 11, 0.877);
+  background-color: rgba(165, 103, 11, 0.8823529412);
   text-shadow: 5px 1px 0px rgba(8, 8, 8, 0.37);
   padding: 0.6rem 1rem 0.2rem 1rem;
   border-radius: 10%;
-  margin: 2rem 0rem 0.5rem 2rem;
+  margin: 2rem 0rem 2rem 0rem;
   align-content: center;
-}
-
-.map-main-container-p {
-  font-size: clamp(1rem, 0.583rem + 0.868vw, 1.6rem);
-  line-height: clamp(1rem, 0.583rem + 0.868vw, 1.6rem);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 1rem;
-  width: 90%;
-  word-spacing: 0.2rem;
-}
-
-.map-main-section-search {
-  background-color: rgba(128, 128, 128, 0);
 }
 
 .map-main-section-filtro-options {
@@ -1421,7 +1289,7 @@
 .map-main-filtro-option {
   font-size: 30px;
   text-align: center;
-  background-color: #3F1B03;
+  background-color: rgba(63, 27, 3, 0.9333333333);
   color: white;
   border-color: #000000;
   border-radius: 5%;
@@ -1444,13 +1312,13 @@
   flex-direction: row;
   justify-content: center;
   width: 100%;
-  background-color: rgba(184, 184, 184, 0.801);
+  background-color: rgba(187, 187, 187, 0.8784313725);
   padding: 1rem 0rem;
   height: auto;
 }
 
 .map-main-section-results {
-  border: #ffffff groove 0.15rem;
+  border: white groove 0.15rem;
   width: 40%;
   height: 100%;
   padding: 0;
@@ -1464,8 +1332,8 @@
   color: white;
   text-align: center;
   list-style-type: none;
-  -webkit-text-decoration: overline rgb(172, 172, 172);
-          text-decoration: overline rgb(172, 172, 172);
+  -webkit-text-decoration: overline rgba(187, 187, 187, 0.8784313725);
+          text-decoration: overline rgba(187, 187, 187, 0.8784313725);
   background-color: rgba(110, 110, 110, 0.5411764706);
   padding: 1rem 2rem;
   width: 100%;
@@ -1491,7 +1359,7 @@
 
 .map-main-section-img1 {
   width: 25%;
-  height: 600px;
+  height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 5%;
@@ -1502,17 +1370,15 @@
   display: flex;
   height: 13rem;
   width: 100%;
-  justify-content: center;
+  justify-content: space-around;
 }
 
 .footer-container {
   display: flex;
   width: 95%;
-  height: auto;
-  justify-content: space-between;
   align-items: center;
   margin: 3rem 0rem 1rem 0rem;
-  background-color: #3F1B03;
+  background-color: rgba(63, 27, 3, 0.9333333333);
   border: 0.6rem rgb(0, 0, 0) double;
   flex-grow: 0;
 }
@@ -1531,11 +1397,10 @@
 
 .footer-logo-text {
   text-align: center;
-  display: block;
   font-family: "coffetea";
   font-weight: 20rem;
   font-size: clamp(1.5rem, 1.266rem + 0.625vw, 2rem);
-  color: #DFC599;
+  color: rgba(243, 190, 130, 0.9333333333);
   text-shadow: 0 -1px 4px #3F1B03, 0 -10px 20px rgba(255, 128, 0, 0.7333333333), 0 -18px 40px rgba(255, 0, 0, 0.719), -40px -21px 0px rgba(206, 29, 29, 0);
   padding-top: 0.5rem;
   margin: 0;
@@ -1581,11 +1446,7 @@
 .footer-redes-tittle {
   font-family: "coffedeco";
   font-size: clamp(1.5rem, 0.797rem + 1.875vw, 3rem);
-  color: #DFC599;
-  font-style: normal;
-  -webkit-text-decoration: double;
-          text-decoration: double;
-  font-weight: lighter;
+  color: rgba(243, 190, 130, 0.9333333333);
   text-align: center;
   padding: 0 1rem 0 1rem;
 }
@@ -1599,7 +1460,7 @@
 }
 .footer-logo-redes img:nth-child(1) {
   height: clamp(1.5rem, 0.75rem + 2vw, 3.1rem);
-  background-color: #DFC599;
+  background-color: rgba(243, 190, 130, 0.9333333333);
   border-radius: 45%;
   border: black 0.2rem solid;
 }

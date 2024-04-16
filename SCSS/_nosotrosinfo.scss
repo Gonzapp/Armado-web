@@ -1,79 +1,51 @@
 /*Nosotros*/
-.nosotros-main-container{
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
+.nosotros-main-tittle {
+    @extend %title-h2
 }
 
 .nosotros-main-container-info {
     display: flex;
     flex-flow: row wrap;
-    align-content: center;
     justify-content: center;
-    text-align: center;
-    font-variant: unset;
-    font-weight: 10;
-    letter-spacing: none;
-    word-spacing: none;
-    color: #000000;
-    font-weight: 100px;
-    font-style: normal;
-    font-variant: normal;
-    text-transform: none;
 }
+
+.nosotros-main-container-p1{
+    @extend %p-principal;
+}
+
 
 .nosotros-main-container-info1{
     display: flex;
-    flex-flow: row wrap;
-    align-content: center;
-    justify-content: center;
-    text-align: center;
-    font-variant: unset;
-    font-weight: 10;
-    letter-spacing: none;
-    word-spacing: none;
-    color: #000000;
-    font-weight: 100px;
-    font-style: normal;
-    font-variant: normal;
-    text-transform: none;
-}
-
-.nosotros-main-container-tittle {
-    font-size: clamp(2rem, 1.043rem + 1.495vw, 2.8rem);
-    font-family: coffetea;
-    font-weight: 70;
-    display: flex;
-    background-color: $color-base;
-    color: #FFF;
-    text-shadow: 5px 1px 0px rgba(8, 8, 8, 0.37);
-    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
 }
 
 .nosotros-main-h3 {
-    color: #FFF;
-    font-size: clamp(2rem, 1.043rem + 1.495vw, 2.8rem);
-    font-family: coffetea;
-    font-weight: 70;
+    align-self:flex-start;
+    color: white;
+    background-color: $color-h3;
+    height: 100%;
+    width:max-content;
+    font-family: 'coffetea';
+    font-size: clamp(0.8rem, 0.451rem + 1.744vw, 2.5rem);
+    font-variant: unset;
+    font-weight: 10;
     text-decoration: none;
-    text-align: left;
-    background-color: rgba(165, 103, 11, 0.877);
-    text-shadow: 5px 1px 0px rgba(8, 8, 8, 0.37);
-    padding: 0.6rem 0rem 0.2rem 2rem;
-    border-radius: 10%;
-    margin-right: 50%;
+    border: 1px $color-solid solid;
+    border-radius: 15%;
+    margin: 1% 5% 2% 5%;
+    padding: 1%;
 }
 
 .nosotros-main-container-p {
-    font-family: 'coffetea' sans-serif;
-    font-size: clamp(0.7rem, 0.454rem + 1.231vw, 1.9rem);
-    background-color: #3f1b03ef;
-    color: #FFF;
-    word-spacing: 0.3rem;
-    text-align: left;
-    text-shadow: 5px 1px 0px rgba(8, 8, 8, 0.37);
-    text-align: left;
-    padding-left: 2.4rem;
+    display: flex;
+    justify-content: center;
+    align-self:center;
+    @extend %p-principal;
+    font-family: "coffetea" sans-serif;
+    background-color: $color-base;
+    color: white;
+    word-spacing: 0.2rem;
+    text-shadow: 4px 1px 0px rgba(0, 0, 0, 0.37);
 }
 
