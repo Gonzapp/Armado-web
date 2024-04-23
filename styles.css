@@ -1282,87 +1282,121 @@
   align-content: center;
 }
 
-.map-main-section-filtro-options {
-  text-align: center;
+.container-rests {
+  display: flex;
+  flex-flow: nowrap column;
+  margin: 2%;
 }
 
-.map-main-filtro-option {
-  font-size: 30px;
-  text-align: center;
-  background-color: rgba(63, 27, 3, 0.9333333333);
+.cointainer-item {
+  background-color: transparent;
+}
+
+.accordion {
+  display: block;
+  justify-content: center;
+}
+
+.accordion-button {
+  font-family: "coffedeco" sans-serif;
   color: white;
-  border-color: #000000;
-  border-radius: 5%;
-  font-family: "gfont";
-  padding: 0.4rem;
-  margin-bottom: 1rem;
+  background-color: rgba(63, 27, 3, 0.9333333333);
+  border: 2px white solid;
 }
-
-.map-filtro-option-text {
-  font-family: "gfont";
+.accordion-button:not(.collapsed) {
+  color: black;
+  font-weight: bold;
 }
-
-.map-main-container-section {
+.accordion-button ul {
   display: flex;
+  flex-flow: row wrap;
   justify-content: center;
-}
-
-.map-main-section-details {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
+  align-content: center;
   width: 100%;
-  background-color: rgba(187, 187, 187, 0.8784313725);
-  padding: 1rem 0rem;
-  height: auto;
+  padding: 4px;
+}
+@media (max-width: 600px) {
+  .accordion-button ul {
+    display: flex;
+    flex-flow: column wrap;
+    width: 100%;
+    align-items: center;
+  }
+}
+.accordion-button ul li {
+  display: block;
+  align-content: center;
+  border: black 1.5px ridge;
+  border-radius: 5%;
+  background-color: rgba(187, 187, 187, 0.1764705882);
+  padding: 2px 5px;
+  margin: 5px;
+  text-decoration: none;
+  list-style: none;
+}
+@media (max-width: 560px) {
+  .accordion-button ul li {
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    width: -moz-max-content;
+    width: max-content;
+  }
 }
 
-.map-main-section-results {
-  border: white groove 0.15rem;
-  width: 40%;
-  height: 100%;
-  padding: 0;
+.accordion-text {
+  font-family: "kgfont" sans-serif;
+  font-size: clamp(0.6rem, 0.497rem + 0.513vw, 1.1rem);
+  margin: 0pc;
+}
+
+.box-color {
+  background-color: transparent;
   margin: 0;
 }
 
-.map-main-section-result {
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  font-size: 1.4rem;
-  font-weight: 1px;
-  color: white;
-  text-align: center;
-  list-style-type: none;
-  -webkit-text-decoration: overline rgba(187, 187, 187, 0.8784313725);
-          text-decoration: overline rgba(187, 187, 187, 0.8784313725);
-  background-color: rgba(110, 110, 110, 0.5411764706);
-  padding: 1rem 2rem;
-  width: 100%;
+.acc-body {
+  background-color: rgba(128, 128, 128, 0.959);
+  padding: 0;
 }
 
-.map-scroll {
-  position: relative;
-  width: 40%;
-  height: 100%;
-}
-
-.map-main--section-map {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-}
-
-.mapa-container-img {
+.container-rests {
   display: flex;
-  justify-content: center;
-  gap: 2rem;
+  flex-flow: nowrap column;
+  margin: 2%;
 }
 
-.map-main-section-img1 {
-  width: 25%;
-  height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-  border-radius: 5%;
+.cointainer-item {
+  background-color: transparent;
+}
+
+.accordion-button {
+  font-family: "coffedeco" sans-serif;
+  color: white;
+  font-weight: bold;
+  font-size: 1.4rem;
+  background-color: rgba(63, 27, 3, 0.9333333333);
+  border: 2px white solid;
+}
+
+.accordion-text {
+  font-family: "kgfont" sans-serif;
+}
+
+.accordion-button:not(.collapsed) {
+  color: black;
+  font-weight: bold;
+  background-color: rgba(243, 190, 130, 0.9333333333);
+}
+
+.box-color {
+  background-color: transparent;
+  margin: 0;
+}
+
+.acc-body {
+  background-color: rgba(128, 128, 128, 0.959);
+  padding: 0;
 }
 
 /*Footer*/

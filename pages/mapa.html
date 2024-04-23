@@ -18,9 +18,13 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap" rel="stylesheet">
   <!--icono nav-->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!--Icon Pestaña-->
+  <link rel="shortcut icon" href="../Images/logo/logo.png" type="image/x-icon">
 
-  <title>SweetCoffe | Todos mis lugares</title>
+  <title>SweetCoffe | Resto Map</title>
 </head>
 
 <body class="body-background-img">
@@ -48,88 +52,371 @@
       <p class="map-main-container-p">¡Bienvenido al rincón de los mejores desayunos y meriendas!
         Explora y descubre los lugares más deliciosos de la ciudad. ¡A disfrutar de sabores únicos! 🌞🍽️</p>
     </div>
-    <section class="map-main-section-search">
-      <div class="map-main-section-filtro-options">
-        <select class="map-main-filtro-option" id="selectorRestaurantes">
-          <!--La idea es hacer un filtro para ver restaurantes segun la zona y el barrio indicado-->
-          <option class="map-filtro-option-text" value="zonanorte">Zona Norte</option>
-          <option class="map-filtro-option-text" value="zonasur">Zona Sur</option>
-          <option class="map-filtro-option-text" value="zonaeste">Zona Este</option>
-          <option class="map-filtro-option-text" value="zonaoeste">Zona Oeste</option>
-        </select>
-        <select class="map-main-filtro-option" id="selectorRestaurantes">
-          <option class="map-filtro-option-text" value="lanus">Lanús</option>
-          <option class="map-filtro-option-text" value="quilmessur">Quilmes Sur</option>
-          <option class="map-filtro-option-text" value="sanisidro">San Isidro</option>
-          <option class="map-filtro-option-text" value="avellaneda">Avellaneda</option>
-          <option class="map-filtro-option-text" value="vicentelopez">Vicente López</option>
-          <option class="map-filtro-option-text" value="moron">Morón</option>
-          <option class="map-filtro-option-text" value="tigre">Tigre</option>
-          <option class="map-filtro-option-text" value="lomasdezamora">Lomas de Zamora</option>
-          <option class="map-filtro-option-text" value="sanmartin">San Martín</option>
-          <option class="map-filtro-option-text" value="escobar">Escobar</option>
-          <option class="map-filtro-option-text" value="mas">Mas...</option>
-        </select>
-        <select class="map-main-filtro-option" id="selectorRestaurantes">
-          <option class="map-filtro-option-text" value="">Menor precio</option>
-          <option class="map-filtro-option-text" value="quilmessur">Mayor precio</option>
-          <option class="map-filtro-option-text" value="sanisidro">Mas valorados</option>
-          <option class="map-filtro-option-text" value="avellaneda">Menos valorados</option>
-        </select>
-        <button class="map-filtro-option-text map-main-filtro-option"
-          onclick="mostrarRestauranteSeleccionado()">Filtrar</button>
-        <p id="resultadoRestaurante"></p>
-      </div>
-      <div class="map-main-container-section">
-        <div class="map-main-section-details">
-          <ul class="map-main-section-results">
-            <!--La idea seria poder elegir entre distintos restauraste y al presionar muestre la informacion relacionada-->
-            <a href="#rest2">
-              <li class="map-main-section-result">Café Delicia</li>
-            </a>
-            <a href="#rest1">
-              <li class="map-main-section-result">Pan Aroma</li>
-            </a>
-            <li class="map-main-section-result">Dulce Encanto</li>
-            <li class="map-main-section-result">Rincón Sabroso</li>
-            <li class="map-main-section-result">Té y Gusto</li>
-            <li class="map-main-section-result">Delicias Exquisitas</li>
-            <li class="map-main-section-result">Aroma a Canela</li>
-            <li class="map-main-section-result">Merienda Alegre</li>
-            <li class="map-main-section-result">Sabor del Momento</li>
-            <li class="map-main-section-result">Rinconcito Dulce</li>
-          </ul>
-          <div class="map-scroll">
-            <iframe id="rest1" class="map-main--section-map"
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d52585.251675305764!2d-58.497799233782395!3d-34.53891230682149!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb1688fc9e9e5%3A0x470af99b3c680113!2sPaseo%20del%20Viento!5e0!3m2!1ses-419!2sar!4v1709070511043!5m2!1ses-419!2sar"
-              width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-              referrerpolicy="no-referrer-when-downgrade"></iframe>
-            <iframe id="rest2" class="map-main--section-map"
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3282.3761373451684!2d-58.56328579999999!3d-34.6452026!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc7e67ce6fa5d%3A0x98c542e82ae85820!2sCl%C3%B6e%20Bakehouse!5e0!3m2!1ses-419!2sar!4v1712042602665!5m2!1ses-419!2sar"
-              width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-              referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <section class="accordion" id="accordionExample">
+      <div class="accordion-item cointainer-item">
+        <h2 class="accordion-header " id="headingOne">
+          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+            aria-expanded="true" aria-controls="collapseOne">
+            <ul class="accordion-text">
+              <li>Brunch Haven</li>
+              <li>Dirección: Av. Corrientes 1234, Buenos Aires.</li>
+              <li>Valoración: ⭐⭐⭐⭐</li>
+            </ul>
+          </button>
+        </h2>
+        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+          data-bs-parent="#accordionExample">
+          <div class="accordion-body acc-body">
+            <section class="main-section2">
+              <div class="cloe">
+              </div>
+              <div class="box-container-rest2">
+                <div class="box-rest2 box-color">
+                  <div class="main-section2-rest-info">
+                    <div class="main-section2-texts">
+                      <p class="main-section2-text1">
+                        En Brunch Haven, la mañana comienza con una selección ecléctica de deliciosos desayunos y
+                        meriendas que te harán desear que el sol nunca se ponga. Desde los clásicos pancakes hasta los
+                        huevos Benedict, cada plato está preparado con esmero y pasión. El ambiente acogedor y la
+                        excelente atención al cliente hacen de Brunch Haven el lugar ideal para comenzar tu día con
+                        energía.</p>
+                      <p class="main-section2-text1">A pesar de la deliciosa comida, el espacio puede llenarse
+                        rápidamente durante las horas punta, lo que podría resultar en tiempos de espera más largos de
+                        lo deseado. La falta de reservas hace que sea complicado planificar una visita, especialmente
+                        para grupos más grandes.</p>
+                    </div>
+                  </div>
+                  <div class="main-section2-imgs">
+                    <img class="main-section2-img1" src="../Images/map/1.jpg" alt="Comida">
+                    <img class="main-section2-img2" src="../Images/map/2.jpg" alt="Comida">
+                    <img class="main-section2-img3" src="../Images/map/3.jpg" alt="Comida">
+                  </div>
+                  <div class="main-box-map2">
+                    <p class="main-section2-star">★★★★</p>
+                    <a class="main-section2-local" href="https://maps.app.goo.gl/BTvRUho8aaAAQdKm9">Brunch Haven</a>
+                    <p class="main-section2-p">Av. Corrientes 1234, Buenos Aires.</p>
+                    <iframe class="main-section2-map"
+                      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3282.3761373451684!2d-67.563285800008045!3d-34.6452026!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc7e67ce6fa5d%3A0x98c542e82ae85820!2sCl%C3%B6e%20Bakehouse!5e0!3m2!1ses-419!2sar!4v1710193494327!5m2!1ses-419!2sar"
+                      width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                      referrerpolicy="no-referrer-when-downgrade"></iframe>
+                  </div>
+                </div>
+              </div>
+            </section>
           </div>
         </div>
       </div>
-      <div class="map-main-container-info">
-        <h3 class="map-main-h3">Aspectos Positivos de "Té y Gusto"</h3>
-        <p class="map-main-container-p">"Té y Gusto" cautiva a sus visitantes con una experiencia
-          gastronómica inigualable. Desde la primera entrada, los aromas de los tés frescos y la presentación exquisita
-          de sus platos dan la bienvenida a un rincón donde la calidad es indiscutible. La atención personalizada y el
-          ambiente elegante crean un espacio acogedor que invita a quedarse y disfrutar de cada detalle. La fusión de
-          sabores y la dedicación a la excelencia culinaria hacen que cada visita a "Té y Gusto" sea una experiencia
-          única y memorable.</p>
-        <h3 class="map-main-h3">Aspectos a Mejorar en "Té y Gusto"</h3>
-        <p class="map-main-container-p">No obstante, algunos aspectos podrían perfeccionarse para
-          alcanzar su máximo potencial. La variedad limitada de platos podría limitar la atracción de ciertos públicos,
-          y en momentos de gran concurrencia, el tiempo de espera se prolonga más de lo deseado. Además, aunque la
-          calidad justifica los precios, algunos visitantes podrían encontrarlos elevados. Con ajustes en estas áreas,
-          "Té y Gusto" podría elevar aún más su estatus como destino gastronómico de primer nivel en la </p>
+      <div class="accordion-item cointainer-item">
+        <h2 class="accordion-header" id="headingTwo">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+            <ul class="accordion-text">
+              <li>Morning Bites Café</li>
+              <li>Dirección: Calle Florida 567, Buenos Aires.</li>
+              <li>Valoración: ⭐⭐⭐</li>
+            </ul>
+          </button>
+        </h2>
+        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+          data-bs-parent="#accordionExample">
+          <div class="accordion-body acc-body">
+            <section class="main-section2">
+              <div class="cloe">
+              </div>
+              <div class="box-container-rest2">
+                <div class="box-rest2 box-color">
+                  <div class="main-section2-rest-info">
+                    <div class="main-section2-texts">
+                      <p class="main-section2-text1">
+                        Morning Bites Café es el lugar perfecto para aquellos que buscan un desayuno o merienda rápida
+                        pero deliciosa. Con una variedad de opciones frescas y sabrosas, desde sándwiches de desayuno
+                        hasta ensaladas de frutas, este café ofrece algo para todos los gustos. El ambiente relajado y
+                        el personal amable garantizan una experiencia agradable en cada visita.</p>
+                      <p class="main-section2-text1">Aunque la comida es deliciosa, a veces el espacio puede llenarse
+                        y puede ser difícil encontrar asientos disponibles, especialmente durante los fines de semana.
+                        Esto puede hacer que algunos clientes opten por buscar otros lugares menos concurridos.</p>
+                    </div>
+                  </div>
+                  <div class="main-section2-imgs">
+                    <img class="main-section2-img1" src="../Images/map/4.jpg" alt="Comida">
+                    <img class="main-section2-img2" src="../Images/map/5.jpg" alt="Comida">
+                    <img class="main-section2-img3" src="../Images/map/6.jpg" alt="Comida">
+                  </div>
+                  <div class="main-box-map2">
+                    <p class="main-section2-star">★★★</p>
+                    <a class="main-section2-local" href="https://maps.app.goo.gl/BTvRUho8aaAAQdKm9">Morning Bites
+                      Café</a>
+                    <p class="main-section2-p">Calle Florida 567, Buenos Aires.</p>
+                    <iframe class="main-section2-map"
+                      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3282.3761373451684!2d-67.563285800008045!3d-34.6452026!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc7e67ce6fa5d%3A0x98c542e82ae85820!2sCl%C3%B6e%20Bakehouse!5e0!3m2!1ses-419!2sar!4v1710193494327!5m2!1ses-419!2sar"
+                      width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                      referrerpolicy="no-referrer-when-downgrade"></iframe>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </div>
+        </div>
       </div>
-      <div class="mapa-container-img">
-        <img class="map-main-section-img1" src="../Images/map/img1.jpg" alt="imagen de resultado elegido">
-        <img class="map-main-section-img1" src="../Images/map/img2.jpg" alt="imagen de resultado elegido">
-        <img class="map-main-section-img1" src="../Images/map/img3.jpg" alt="imagen de resultado elegido">
+      <div class="accordion-item cointainer-item">
+        <h2 class="accordion-header" id="headingThree">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+            <ul class="accordion-text">
+              <li>Sunrise Eats</li>
+              <li>Dirección: Av. Santa Fe 2000, Buenos Aires.</li>
+              <li>Valoración: ⭐⭐⭐⭐⭐</li>
+            </ul>
+          </button>
+        </h2>
+        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+          data-bs-parent="#accordionExample">
+          <div class="accordion-body acc-body">
+            <section class="main-section2">
+              <div class="cloe">
+              </div>
+              <div class="box-container-rest2">
+                <div class="box-rest2 box-color">
+                  <div class="main-section2-rest-info">
+                    <div class="main-section2-texts">
+                      <p class="main-section2-text1">
+                        En Sunrise Eats, cada bocado es una explosión de sabor que te hace sentir como si estuvieras
+                        en el paraíso del desayuno. Desde sus exquisitos waffles belgas hasta sus omelets
+                        perfectamente sazonados, la calidad y el sabor de la comida son incomparables. El ambiente
+                        acogedor y el servicio atento hacen que cada visita sea una experiencia memorable.</p>
+                      <p class="main-section2-text1"> Aunque la comida es excelente, a veces el servicio puede ser un
+                        poco lento durante las horas pico. Esto puede causar frustración en algunos clientes,
+                        especialmente aquellos que tienen poco tiempo para disfrutar de su comida.</p>
+                    </div>
+                  </div>
+                  <div class="main-section2-imgs">
+                    <img class="main-section2-img1" src="../Images/map/7.jpg" alt="Comida">
+                    <img class="main-section2-img2" src="../Images/map/8.jpg" alt="Comida">
+                    <img class="main-section2-img3" src="../Images/map/9.jpg" alt="Comida">
+                  </div>
+                  <div class="main-box-map2">
+                    <p class="main-section2-star">★★★★★</p>
+                    <a class="main-section2-local" href="https://maps.app.goo.gl/BTvRUho8aaAAQdKm9">Sunrise Eats</a>
+                    <p class="main-section2-p">Av. Santa Fe 2000, Buenos Aires.</p>
+                    <iframe class="main-section2-map"
+                      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3282.3761373451684!2d-67.563285800008045!3d-34.6452026!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc7e67ce6fa5d%3A0x98c542e82ae85820!2sCl%C3%B6e%20Bakehouse!5e0!3m2!1ses-419!2sar!4v1710193494327!5m2!1ses-419!2sar"
+                      width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                      referrerpolicy="no-referrer-when-downgrade"></iframe>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item cointainer-item">
+        <h2 class="accordion-header" id="headingFour">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+            <ul class="accordion-text">
+              <li>Sweet Morning Café</li>
+              <li>Dirección: Av. Cabildo 3000, Buenos Aires.</li>
+              <li>Valoración: ⭐⭐⭐⭐</li>
+            </ul>
+          </button>
+        </h2>
+        <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+          data-bs-parent="#accordionExample">
+          <div class="accordion-body acc-body">
+            <section class="main-section2">
+              <div class="cloe">
+              </div>
+              <div class="box-container-rest2">
+                <div class="box-rest2 box-color">
+                  <div class="main-section2-rest-info">
+                    <div class="main-section2-texts">
+                      <p class="main-section2-text1">
+                        Sweet Morning Café ofrece una experiencia de desayuno y merienda que deleitará tu paladar y
+                        calentará tu corazón. Con una amplia selección de platos dulces y salados, desde tortitas
+                        esponjosas hasta tostadas francesas decadentes, este café es el lugar perfecto para satisfacer
+                        tus antojos matutinos. El ambiente acogedor y el personal amable te hacen sentir como en casa
+                        desde el momento en que entras por la puerta.</p>
+                      <p class="main-section2-text1">Durante las horas punta, el café puede llenarse y puede haber una
+                        espera para conseguir mesa. Esto puede resultar en una experiencia incómoda para los clientes
+                        que buscan un servicio rápido.</p>
+                    </div>
+                  </div>
+                  <div class="main-section2-imgs">
+                    <img class="main-section2-img1" src="../Images/map/10.jpg" alt="Comida">
+                    <img class="main-section2-img2" src="../Images/map/11.jpg" alt="Comida">
+                    <img class="main-section2-img3" src="../Images/map/12.jpg" alt="Comida">
+                  </div>
+                  <div class="main-box-map2">
+                    <p class="main-section2-star">★★★★</p>
+                    <a class="main-section2-local" href="https://maps.app.goo.gl/BTvRUho8aaAAQdKm9">Sweet Morning
+                      Café</a>
+                    <p class="main-section2-p">Av. Cabildo 3000, Buenos Aires.</p>
+                    <iframe class="main-section2-map"
+                      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3282.3761373451684!2d-67.563285800008045!3d-34.6452026!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc7e67ce6fa5d%3A0x98c542e82ae85820!2sCl%C3%B6e%20Bakehouse!5e0!3m2!1ses-419!2sar!4v1710193494327!5m2!1ses-419!2sar"
+                      width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                      referrerpolicy="no-referrer-when-downgrade"></iframe>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item cointainer-item">
+        <h2 class="accordion-header" id="headingSix">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+            <ul class="accordion-text">
+              <li>Rise & Shine Diner</li>
+              <li>Dirección: Av. de Mayo 532, Buenos Aires.</li>
+              <li>Valoración: ⭐⭐⭐</li>
+            </ul>
+          </button>
+        </h2>
+        <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix"
+          data-bs-parent="#accordionExample">
+          <div class="accordion-body acc-body">
+            <section class="main-section2">
+              <div class="cloe">
+              </div>
+              <div class="box-container-rest2">
+                <div class="box-rest2 box-color">
+                  <div class="main-section2-rest-info">
+                    <div class="main-section2-texts">
+                      <p class="main-section2-text1">
+                        En Rise & Shine Diner, el desayuno se sirve con una sonrisa. Con una decoración retro y un
+                        ambiente acogedor, este diner te transporta a la época dorada de los desayunos caseros. Desde
+                        los clásicos huevos revueltos hasta las tortitas esponjosas, cada plato está preparado con
+                        esmero y atención al detalle. La comida deliciosa y el servicio amable hacen de este lugar una
+                        parada obligatoria para los amantes del desayuno.</p>
+                      <p class="main-section2-text1">El espacio puede llenarse rápidamente, lo que puede resultar en
+                        tiempos de espera durante las horas punta. Esto puede ser frustrante para los clientes que
+                        tienen poco tiempo y buscan una comida rápida.</p>
+                    </div>
+                  </div>
+                  <div class="main-section2-imgs">
+                    <img class="main-section2-img1" src="../Images/map/13.jpg" alt="Comida">
+                    <img class="main-section2-img2" src="../Images/map/14.jpg" alt="Comida">
+                    <img class="main-section2-img3" src="../Images/map/15.jpg" alt="Comida">
+                  </div>
+                  <div class="main-box-map2">
+                    <p class="main-section2-star">★★★</p>
+                    <a class="main-section2-local" href="https://maps.app.goo.gl/BTvRUho8aaAAQdKm9">Rise & Shine
+                      Diner</a>
+                    <p class="main-section2-p">Av. de Mayo 532, Buenos Aires.</p>
+                    <iframe class="main-section2-map"
+                      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3282.3761373451684!2d-67.563285800008045!3d-34.6452026!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc7e67ce6fa5d%3A0x98c542e82ae85820!2sCl%C3%B6e%20Bakehouse!5e0!3m2!1ses-419!2sar!4v1710193494327!5m2!1ses-419!2sar"
+                      width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                      referrerpolicy="no-referrer-when-downgrade"></iframe>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item cointainer-item">
+        <h2 class="accordion-header" id="headingSeven">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+            <ul class="accordion-text">
+              <li>Sunny Side Café</li>
+              <li>Dirección: Av. Scalabrini Ortiz 1520, Buenos Aires.</li>
+              <li>Valoración:⭐⭐⭐⭐</li>
+            </ul>
+          </button>
+        </h2>
+        <div id="collapseSeven" class="accordion-collapse collapse" aria-labelledby="headingSeven"
+          data-bs-parent="#accordionExample">
+          <div class="accordion-body acc-body">
+            <section class="main-section2">
+              <div class="cloe">
+              </div>
+              <div class="box-container-rest2">
+                <div class="box-rest2 box-color">
+                  <div class="main-section2-rest-info">
+                    <div class="main-section2-texts">
+                      <p class="main-section2-text1">
+                        Sunny Side Café es un refugio acogedor que ofrece una experiencia de desayuno y merienda con
+                        un toque soleado. Desde sus suculentos sándwiches de desayuno hasta sus coloridas ensaladas de
+                        frutas, cada plato está lleno de frescura y sabor. El ambiente luminoso y el personal amable
+                        hacen que cada visita sea una experiencia memorable.</p>
+                      <p class="main-section2-text1">En las horas punta, puede haber una espera para conseguir mesa
+                        debido a la popularidad del lugar. Esto puede ser inconveniente para aquellos que tienen una
+                        agenda ajustada y necesitan una comida rápida.</p>
+                    </div>
+                  </div>
+                  <div class="main-section2-imgs">
+                    <img class="main-section2-img1" src="../Images/map/16.jpg" alt="Comida">
+                    <img class="main-section2-img2" src="../Images/map/17.jpg" alt="Comida">>
+                    <img class="main-section2-img3" src="../Images/map/18.jpg" alt="Comida">
+                  </div>
+                  <div class="main-box-map2">
+                    <p class="main-section2-star">★★★★</p>
+                    <a class="main-section2-local" href="https://maps.app.goo.gl/BTvRUho8aaAAQdKm9">Sunny Side
+                      Café</a>
+                    <p class="main-section2-p">Av. Scalabrini Ortiz 1520, Buenos Aires.</p>
+                    <iframe class="main-section2-map"
+                      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3282.3761373451684!2d-67.563285800008045!3d-34.6452026!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc7e67ce6fa5d%3A0x98c542e82ae85820!2sCl%C3%B6e%20Bakehouse!5e0!3m2!1ses-419!2sar!4v1710193494327!5m2!1ses-419!2sar"
+                      width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                      referrerpolicy="no-referrer-when-downgrade"></iframe>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item cointainer-item">
+        <h2 class="accordion-header" id="headingEight">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
+            <ul class="accordion-text">
+              <li>Bird Café</li>
+              <li>Dirección: Av. Santa fé 535, Buenos Aires.</li>
+              <li>Valoración: ⭐⭐⭐</li>
+            </ul>
+          </button>
+        </h2>
+        <div id="collapseEight" class="accordion-collapse collapse" aria-labelledby="headingEight"
+          data-bs-parent="#accordionExample">
+          <div class="accordion-body acc-body">
+            <section class="main-section2">
+              <div class="cloe">
+              </div>
+              <div class="box-container-rest2">
+                <div class="box-rest2 box-color">
+                  <div class="main-section2-rest-info">
+                    <div class="main-section2-texts">
+                      <p class="main-section2-text1">
+                        Bird Café, el desayuno es más que una comida, es una experiencia. Con una amplia variedad de
+                        platos, desde los clásicos huevos Benedict hasta los saludables smoothie bowls, cada bocado
+                        está lleno de sabor y frescura. El ambiente acogedor y el servicio atento hacen que este café
+                        sea el lugar perfecto para comenzar el día con energía.</p>
+                      <p class="main-section2-text1">Durante las horas punta, el espacio puede llenarse rápidamente,
+                        lo que puede resultar en tiempos de espera más largos. Esto puede ser inconveniente para los
+                        clientes que tienen poco tiempo y buscan una comida rápida.</p>
+                    </div>
+                  </div>
+                  <div class="main-section2-imgs">
+                    <img class="main-section2-img1" src="../Images/map/26.jpg" alt="Comida">
+                    <img class="main-section2-img2" src="../Images/map/20.jpg" alt="Comida">
+                    <img class="main-section2-img3" src="../Images/map/21.jpg" alt="Comida">
+                  </div>
+                  <div class="main-box-map2">
+                    <p class="main-section2-star">★★★</p>
+                    <a class="main-section2-local" href="https://maps.app.goo.gl/BTvRUho8aaAAQdKm9">Bird Café</a>
+                    <p class="main-section2-p">Av. Santa fé 535, Buenos Aires.</p>
+                    <iframe class="main-section2-map"
+                      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3282.3761373451684!2d-67.563285800008045!3d-34.6452026!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc7e67ce6fa5d%3A0x98c542e82ae85820!2sCl%C3%B6e%20Bakehouse!5e0!3m2!1ses-419!2sar!4v1710193494327!5m2!1ses-419!2sar"
+                      width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                      referrerpolicy="no-referrer-when-downgrade"></iframe>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </div>
+        </div>
       </div>
     </section>
   </main>
