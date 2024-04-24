@@ -1,7 +1,6 @@
 /*Main*/
 .main-container-info{
-    display: flex;
-    justify-content: center;
+    @extend %dflex, %j-content-c;
 }
 
 .main-container-title {
@@ -14,7 +13,7 @@
     font-weight: 10;
     text-decoration: none;
     text-shadow: 2px 4px #000000;
-    border-radius: 20%;
+    border-radius: $standard-radius;
     border: 10%;
     padding: 1%;
     margin-bottom: 1rem;
@@ -23,8 +22,7 @@
 }
 
 .main-container-text{
-    display: flex;
-    justify-content: center;
+    @extend %dflex, %j-content-se;
 }
 
 .main-container-p {

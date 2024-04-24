@@ -1,15 +1,13 @@
 /*Footer*/
 .footer-box {
-    display: flex;
+    @extend %dflex, %j-content-sa;
     height: 13rem;
     width: 100%;
-    justify-content: space-around;
 }
 
 .footer-container {
-    display: flex;
+    @extend %dflex, %a-items-c;
     width: 95%;
-    align-items: center;
     margin: 3rem 0rem 1rem 0rem;
     background-color: $color-base;
     border: 0.6rem rgb(0, 0, 0) double;
@@ -18,10 +16,7 @@
 
 /*footer logo*/
 .footer-logo {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
+    @extend %dflex, %j-content-c, %f-direction-c, %a-items-c;
     flex-grow: 1;
     padding: 0 1rem 0 1rem;
     height: 100%;
@@ -46,10 +41,7 @@
 
 /*footer derechos*/
 .footer-derechos {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    align-self: flex-end;
+    @extend %dflex, %j-content-c, %a-items-c, %a-self-fe;
     margin-bottom: 0.5rem;
     flex-grow: 2;
     width: auto;
@@ -69,9 +61,7 @@
 
 /*footer redes*/
 .footer-container-redes {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    @extend %dflex, %f-direction-c, %a-items-c;
     flex-grow: 2;
     row-gap: 0.5rem;
 }
@@ -85,11 +75,9 @@
 }
 
 .footer-logo-redes {
-    display: flex;
-    justify-content: space-evenly;
+    @extend %dflex, %j-content-se;
     height: 100%;
     width: 100%;
-    justify-self: left;
 
     img:nth-child(1){
         height: clamp(1.5rem, 0.75rem + 2vw, 3.1rem);

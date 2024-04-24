@@ -1,13 +1,12 @@
 /*top Botton*/
 .botton {
-    position: relative;
+    @extend %j-content-r;
     position: sticky;
     top: 10px;
     bottom: 100px;
     z-index: 10;
     height: auto;
     width: 100%;
-    justify-content: right;
 }
 
 

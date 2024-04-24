@@ -1,5 +1,5 @@
 .body-background-img {
     position: relative;
-    justify-content: center;
+    @extend %j-content-c;
     background-image: url(./Images/redes/background.jpg);
 }

@@ -1,6 +1,6 @@
-.logo-container {
+.logo-container {  
+    @extend %dflex, %f-direction-r;
     display: flex;
-    flex-direction: row;
     margin: 2rem 0rem 2rem 1rem;
     
     @media(max-width: 992px) {
@@ -9,13 +9,11 @@
 }
 
 .logo-section {
-    display: flex;
-    align-items: center;
+    @extend %dflex, %a-items-c, %a-content-c;
     gap: 0.2rem;
-    align-content: center;
 }
 .logo-text {
-    display: flex;
+    @extend %dflex, %a-items-c;
     font-family: "coffetea";
     align-items: center;
     font-size: clamp(1rem, 1.266rem + 0.625vw, 2rem);

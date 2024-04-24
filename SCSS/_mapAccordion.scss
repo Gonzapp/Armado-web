@@ -6,7 +6,9 @@
 }
 
 .map-main-container-tittle {
-@extend %title-h2
+    @extend %title-h2;
+    border-radius: 5%;
+    
 }
 
 .map-main-h3 {
@@ -26,12 +28,14 @@
 
 .map-main-container-p {
     @extend %p-principal;
+    margin:2% 0% 5% 0%;
+
+
 }
 
 
 .container-rests{
-    display: flex; 
-    flex-flow: nowrap column ; 
+    @extend %dflex, %f-direction-c, %f-wr-nw;
     margin: 2%;
    }
    
@@ -40,8 +44,7 @@
    }
    
    .accordion{
-    display:block;
-    justify-content: center;
+    @extend %db, %j-content-c;
    }
    
    .accordion-button {
@@ -55,10 +58,7 @@
     }
 
        ul{
-            display: flex;
-            flex-flow: row wrap;
-            justify-content: center;
-            align-content: center;
+        @extend %dflex, %f-direction-r, %f-wr-w, %j-content-c, %a-content-c;
             width: 100%;
             padding: 4px;
             @media(max-width: 600px) {
@@ -69,8 +69,7 @@
             }
 
             li{
-                display: block;
-                align-content: center;
+                @extend %db, %a-content-c;
                 border: black 1.5px ridge;
                 border-radius: 5%;
                 background-color:$color-button;

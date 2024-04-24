@@ -4,20 +4,15 @@
 }
 
 .nosotros-main-container-info {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
+    @extend %dflex, %f-direction-r, %f-wr-w, %j-content-c;
 }
 
 .nosotros-main-container-p1{
     @extend %p-principal;
 }
 
-
 .nosotros-main-container-info1{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
+    @extend %dflex, %f-direction-c, %j-content-sa;
 }
 
 .nosotros-main-h3 {
@@ -32,15 +27,13 @@
     font-weight: 10;
     text-decoration: none;
     border: 1px $color-solid solid;
-    border-radius: 15%;
+    border-radius: $standard-radius;
     margin: 1% 5% 2% 5%;
     padding: 1%;
 }
 
 .nosotros-main-container-p {
-    display: flex;
-    justify-content: center;
-    align-self:center;
+    @extend %dflex, %j-content-c, %a-self-c;
     @extend %p-principal;
     font-family: "coffetea" sans-serif;
     background-color: $color-base;

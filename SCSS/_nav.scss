@@ -1,8 +1,7 @@
 .nav-container-links {
-    display: flex;
+    @extend %dflex, %a-items-c;
     position: relative;
     background-color:$color-solid;
-    align-items: center;
     height: auto;
     
     @media(max-width: 992px) {
@@ -11,9 +10,7 @@
 }
 
 .open-nav {
-    display: none;
-    justify-content: center;
-    align-items: center;
+    @extend %dn, %j-content-c, %a-items-c;
     margin-left: 1rem;
     transition: 0.5s;
     border: #000000 0.1rem solid;
@@ -70,11 +67,8 @@
 }
 
 .nav-links {
-    display: flex;
-    flex-wrap: wrap;
+    @extend %dflex, %f-wr-w, %a-items-c, %j-content-r;
     text-align: right;
-    align-items: center;
-    justify-content: right;
     width: 100vw;
     height: 4rem;
     gap: 1.25rem;
@@ -109,8 +103,7 @@
 }
 
 .nav-link {
-    display: flex;
-    flex-flow: row wrap;
+    @extend %dflex, %f-direction-r, %f-wr-w;
     font-family: 'Anta', sans-serif;
     font-weight: 400;
     font-style: normal;
@@ -124,6 +117,7 @@
         }
 
     a{
+        @extend %db;
         display: block;
         font-size: clamp(1rem, 0.581rem + 0.654vw, 1.35rem);
         text-decoration: none;

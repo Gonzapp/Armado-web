@@ -2,8 +2,7 @@
 
 
 .main-section-videos {
-    display: flex;
-    justify-content: center;
+    @extend %dflex, %j-content-c;
     gap: 5%;
     padding-left: 3%;
     padding-right: 3%;

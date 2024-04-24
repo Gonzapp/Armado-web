@@ -1,14 +1,13 @@
 
 .main-section1{
-    display: flex;
-    flex-direction: column;
+    @extend %dflex, %f-direction-c;
 }
 
 .line{
-    display: flex;
-    justify-content: center;
+    @extend %dflex, %j-content-c;
+
     div{
-        align-items: center;
+        @extend %a-items-c;
     }
 }
 
@@ -18,8 +17,7 @@
 
 /*section1*/
 .casa-del-te{
-    display: flex;
-    justify-content: center;
+    @extend %dflex, %j-content-c;
 }
 
 .main-section1-name {
@@ -39,6 +37,7 @@
 }
 
 .box-rest1 {
+    @extend %a-content-c, %a-items-c;
     display: grid;
     grid-template-columns: 2fr 2fr 2fr;
     grid-template-rows: repeat(auto-fill);
@@ -52,8 +51,6 @@
         "img info map map"
         "img info map map"
         "img info map map";
-    align-content: center;
-    align-items: center;
 
     @media(max-width: 768px){
         display: grid;
@@ -75,7 +72,7 @@
 }
 
 .main-section1-rest-info {
-    display: flex;
+    @extend %dflex;
     grid-area: info;
     padding: 1rem;
     background-color: $color-contraste;
@@ -98,10 +95,7 @@
 }
 
 .main-section1-imgs {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    @extend %dflex, %f-direction-c, %j-content-c, %a-items-c;
     width: 100%;
     height: 90vh;
     grid-area: img;
@@ -166,6 +160,7 @@
 }
 
 .main-box-map1 {
+    @extend %j-items-c;
     display: grid;
     grid-template-rows: repeat(3, 1fr) 4fr;
     grid-template-columns: 1fr 2fr;
@@ -174,7 +169,6 @@
         "map2 map4 "
         "map3 map4 "
         "map4 map4 ";
-    justify-items: center;
     margin: 1rem;
     width: 100%;
     height: 90vh;
@@ -219,29 +213,14 @@
     }
 }
 
-.main-section1-text1 {
-    margin: 0;
-    font-size: clamp(1rem, 0.583rem + 0.868vw, 1.6rem);
-    line-height: clamp(1rem, 0.583rem + 0.868vw, 1.6rem);
-    font-weight: 10;
-    font-family: 'Anta', sans-serif;
 
-    @media(max-width: 768px) {
-        margin: 0;
-        font-size: clamp(0.7rem, 0.486rem + 1.069vw, 1rem);
-        line-height: clamp(0.9rem, 0.544rem + 1.782vw, 1.4rem);
-        font-weight: 10;
-        font-family: 'Anta', sans-serif;
-    }
-}
 
 
 .main-section1-star {
-    @extend %style-stars;
+    @extend %style-stars, %a-self-fs;
     order: 1;
     grid-column: 1/4;
     grid-row: 1 / 1;
-    align-self: flex-start;
 
     @media(max-width: 768px) {
         font-size: clamp(2rem, -0.491rem + 4.673vw, 3rem);
@@ -251,6 +230,7 @@
 }
 
 .main-section1-local {
+    @extend %a-self-fs;
     font-family: 'Anta', sans-serif;
     font-size: clamp(1.2rem, 0.825rem + 1vw, 2rem);
     color: #000000;
@@ -260,7 +240,6 @@
     order: 2;
     grid-column: 1/4;
     grid-row: 2 / 2;
-    align-self: flex-start;
 
     @media(max-width: 768px) {
         grid-area: map2;
@@ -275,7 +254,7 @@
 }
 
 .main-section1-p {
-    display: block;
+    @extend %db;
     font-family: 'Anta', sans-serif;
     font-size: clamp(0.9rem, 0.622rem + 0.579vw, 1.3rem);
     color: #000000;
@@ -305,9 +284,7 @@
 }
 
 .main-section1-texts {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
+    @extend %dflex, %f-direction-c, %j-content-se;
     height: 100%;
     margin: 0;
 
@@ -321,16 +298,31 @@
         align-items: center;
         gap: 4%;
     }
+
+    p {
+        margin: 0;
+        font-size: clamp(0.9rem, 0.554rem + 0.72vw, 1.4rem);
+        line-height:clamp(1.1rem, 0.339rem + 1.584vw, 2.2rem);
+        font-weight: 10;
+        font-family: 'Anta', sans-serif;
+    
+        @media(max-width: 768px) {
+            margin: 0;
+            font-size: clamp(0.7rem, 0.486rem + 1.069vw, 1rem);
+            line-height: clamp(0.9rem, 0.544rem + 1.782vw, 1.4rem);
+            font-weight: 10;
+            font-family: 'Anta', sans-serif;
+        }
+    }
 }
+
 
 /*section2*/
 
 .cloe {
-    display: flex;
-    flex-wrap: wrap;
+    @extend %dflex, %f-wr-w, %j-content-c;
     height: 100%;
     width: 100%;
-    justify-content: center;
 }
 
 .main-section2-name {
@@ -350,6 +342,7 @@
 }
 
 .box-rest2 {
+    @extend %a-content-c, %a-items-c;
     display: grid;
     grid-template-columns: 2fr 2fr 2fr;
     grid-template-rows: repeat(auto-fill);
@@ -363,8 +356,6 @@
         "img info map map"
         "img info map map"
         "img info map map";
-    align-content: center;
-    align-items: center;
 
     @media(max-width: 768px){
         display: grid;
@@ -386,7 +377,7 @@
 }
 
 .main-section2-rest-info {
-    display: flex;
+    @extend %dflex;
     grid-area: info;
     padding: 1rem;
     background-color: $color-contraste;
@@ -409,10 +400,7 @@
 }
 
 .main-section2-imgs {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    @extend %dflex, %f-direction-c, %j-content-c, %a-items-c;
     width: 100%;
     height: 90vh;
     grid-area: img;
@@ -477,6 +465,7 @@
 }
 
 .main-box-map2 {
+    @extend %j-items-c;
     display: grid;
     grid-template-rows: repeat(3, 1fr) 4fr;
     grid-template-columns: 1fr 2fr;
@@ -485,7 +474,6 @@
         "map2 map4 "
         "map3 map4 "
         "map4 map4 ";
-    justify-items: center;
     margin: 1rem;
     width: 100%;
     height: 90vh;
@@ -512,6 +500,7 @@
 }
 
 .main-section2-map {
+    @extend %a-self-sf;
     grid-area: map;
     width: 90%;
     height: 100%;
@@ -519,7 +508,6 @@
     order: 4;
     grid-column: 1 / 4;
     grid-row: 4 / 5;
-    align-self: self-start;
 
     @media(max-width: 768px) {
         width: 90%;
@@ -530,28 +518,11 @@
     }
 }
 
-.main-section2-text1 {
-    margin: 0;
-    font-size: clamp(1rem, 0.583rem + 0.868vw, 1.6rem);
-    line-height: clamp(1rem, 0.583rem + 0.868vw, 1.6rem);
-    font-weight: 10;
-    font-family: 'Anta', sans-serif;
-
-    @media(max-width: 768px) {
-        margin: 0;
-        font-size: clamp(0.7rem, 0.486rem + 1.069vw, 1rem);
-        line-height: clamp(0.9rem, 0.544rem + 1.782vw, 1.4rem);
-        font-weight: 10;
-        font-family: 'Anta', sans-serif;
-    }
-}
-
 .main-section2-star {
-    @extend %style-stars;
+    @extend %style-stars, %a-self-fs;
     order: 1;
     grid-column: 1/4;
     grid-row: 1 / 1;
-    align-self: flex-start;
 
     @media(max-width: 768px) {
         font-size: clamp(2rem, -0.491rem + 4.673vw, 3rem);
@@ -561,6 +532,7 @@
 }
 
 .main-section2-local {
+    @extend %a-self-fs;
     font-family: 'Anta', sans-serif;
     font-size: clamp(1.2rem, 0.825rem + 1vw, 2rem);
     color: #000000;
@@ -570,7 +542,6 @@
     order: 2;
     grid-column: 1/4;
     grid-row: 2 / 2;
-    align-self: flex-start;
 
     @media(max-width: 768px) {
         grid-area: map2;
@@ -585,7 +556,7 @@
 }
 
 .main-section2-p {
-    display: block;
+    @extend %db;
     font-family: 'Anta', sans-serif;
     font-size: clamp(0.9rem, 0.622rem + 0.579vw, 1.3rem);
     color: #000000;
@@ -615,9 +586,7 @@
 }
 
 .main-section2-texts {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
+    @extend %dflex, %f-direction-c, %j-content-se;
     height: 100%;
     margin: 0;
 
@@ -630,5 +599,20 @@
         margin: 0;
         align-items: center;
         gap: 1%;
+    }
+    p{
+        margin: 0;
+        font-size: clamp(0.9rem, 0.554rem + 0.72vw, 1.4rem);
+        line-height:clamp(1.1rem, 0.339rem + 1.584vw, 2.2rem);
+        font-weight: 10;
+        font-family: 'Anta', sans-serif;
+    
+        @media(max-width: 768px) {
+            margin: 0;
+            font-size: clamp(0.7rem, 0.486rem + 1.069vw, 1rem);
+            line-height: clamp(0.9rem, 0.544rem + 1.782vw, 1.4rem);
+            font-weight: 10;
+            font-family: 'Anta', sans-serif;
+        }
     }
 }

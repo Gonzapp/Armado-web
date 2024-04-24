@@ -1,7 +1,6 @@
 /*Recomendanos*/
 .recomendanos-main-container-info {
-  display: flex;
-  justify-content:space-around;
+  @extend %dflex, %j-content-sa;
 }
 
 .recomendanos-main-container-p {

@@ -12,7 +12,6 @@
     width: 95%;
     padding: 1.3rem 0.3rem 1.3rem 0.3rem;
     border: #000000 2px groove;
-    border-radius: 15%;
 }
 
 %title-h2{    
@@ -27,7 +26,7 @@
     font-weight: 10;
     text-decoration: underline;
     border: 20px;
-    border-radius: 15%;
+    border-radius: $standard-radius;
     margin: 1% 1% 5% 5%;
     padding: 1%;
 }
@@ -42,7 +41,7 @@
     color: white;
     text-shadow: 2px 4px #000000;
     padding: 0.5%;
-    border-radius: 10%;
+    border-radius: $standard-radius;
     margin-top: 1%;
     margin-bottom: 2.5%;
 }
@@ -52,8 +51,74 @@
     color: $color-star;
     text-shadow: 5px 3px 10px #000000, 5px 3px 10px #000000;
 }
-
-%dflex-justcontentcenter{
+%dflex{
     display: flex;
+}
+
+%db{
+    display: block;
+}
+
+%dn{
+    display: none;
+}
+
+%j-content-c{
     justify-content: center;
+}
+
+%j-content-r{
+    justify-content: right;
+}
+
+%j-content-sa{
+    justify-content: space-around;
+}
+
+%j-content-se{
+    justify-content: space-evenly;
+}
+
+%j-items-c{
+    justify-items: center;
+}
+
+%f-direction-c{
+    flex-direction: column;
+}
+
+%f-direction-r{
+    flex-direction: row;
+}
+
+%f-wr-nw{
+    flex-wrap:nowrap;
+}
+
+%f-wr-w{
+    flex-wrap:wrap;
+}
+
+%a-items-c{
+    align-items: center;
+}
+
+%a-content-c{
+    align-content: center;
+}
+
+%a-self-sf{
+    align-self: self-start;
+}
+
+%a-self-fe{
+    align-self: flex-end;
+}
+
+%a-self-c{
+    align-self: center;
+}
+
+%a-self-fs{
+    align-self: flex-start;
 }
