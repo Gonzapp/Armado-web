@@ -122,3 +122,21 @@
 %a-self-fs{
     align-self: flex-start;
 }
+
+
+%Animation360{
+    animation-name: Animation1;
+    animation-duration: 4s;
+    animation-delay: 2s;
+    animation-iteration-count:1;
+}
+
+%Animationfadein{
+    -webkit-animation: Animation2 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+    animation: Animation2 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;       
+}
+
+%Animationdrop{
+	-webkit-animation: Animation3 1.1s, NaNs, both;
+	        animation: Animation3 1.1s, NaNs, both;
+}

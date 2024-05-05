@@ -79,24 +79,12 @@
     height: 100%;
     width: 100%;
 
-    img:nth-child(1){
+    img{
         height: clamp(1.5rem, 0.75rem + 2vw, 3.1rem);
-        background-color:$color-base2;
-        border-radius: 45%;
-        border: black 0.2rem solid;
-    }
-
-    img:nth-child(2){
-        height: clamp(1.5rem, 0.75rem + 2vw, 3.1rem);
-        background-color: #DFC599;
-        border-radius: 45%;
-        border: black 0.2rem solid;
-    }
-
-    img:nth-child(3){
-        height: clamp(1.5rem, 0.75rem + 2vw, 3.1rem);
-        background-color: #DFC599;
-        border-radius: 45%;
-        border: black 0.2rem solid;
+        padding-bottom: 10%;
+        transition: 0.5s;;
+        &:hover{
+            transform: translate(10px, 0)
+        }
     }
 }

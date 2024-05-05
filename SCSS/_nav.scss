@@ -1,5 +1,5 @@
 .nav-container-links {
-    @extend %dflex, %a-items-c;
+    @extend %dflex, %a-items-c, %Animationfadein;
     position: relative;
     background-color:$color-solid;
     height: auto;
@@ -122,7 +122,7 @@
         font-size: clamp(1rem, 0.581rem + 0.654vw, 1.35rem);
         text-decoration: none;
         color: white;
-        transition: 0.5s;
+        transition: 0.3s;
         &:hover{
             background-color: $color-buttom;
             padding: 1rem 0.3rem;
@@ -136,9 +136,7 @@
             height: 100%;
             color: rgba(243, 190, 130, 0.911);
             &:hover{
-                background-color: $color-buttom;
                 padding: 0.5rem 0.1rem;
-                border-radius: 10%;
             }
         }
     }        

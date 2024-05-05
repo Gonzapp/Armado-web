@@ -4,7 +4,7 @@
 }
 @font-face {
   font-family: kgfont;
-  src: url(./fuentes/kg.otf);
+  src: url(../fuentes/kg/kg.otf);
 }
 @font-face {
   font-family: coffetea;
@@ -25,7 +25,72 @@
   position: relative;
   background-image: url(./Images/redes/background.jpg);
 }
-
+@keyframes Animation2 {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes Animation1 {
+  0% {
+    transform: rotateZ(0deg);
+    animation-delay: 0s;
+  }
+  20% {
+    transform: rotateZ(72deg);
+  }
+  40% {
+    transform: rotateZ(144deg);
+  }
+  60% {
+    transform: rotateZ(216deg);
+  }
+  80% {
+    transform: rotateZ(288deg);
+  }
+  100% {
+    transform: rotateZ(360deg);
+    animation-delay: 2s;
+  }
+}
+@keyframes Animation3 {
+  0% {
+    transform: translateY(-500px);
+    animation-timing-function: ease-in;
+    opacity: 0;
+  }
+  38% {
+    transform: translateY(0);
+    animation-timing-function: ease-out;
+    opacity: 1;
+  }
+  55% {
+    transform: translateY(-65px);
+    animation-timing-function: ease-in;
+  }
+  72% {
+    transform: translateY(0);
+    animation-timing-function: ease-out;
+  }
+  81% {
+    transform: translateY(-28px);
+    animation-timing-function: ease-in;
+  }
+  90% {
+    transform: translateY(0);
+    animation-timing-function: ease-out;
+  }
+  95% {
+    transform: translateY(-8px);
+    animation-timing-function: ease-in;
+  }
+  100% {
+    transform: translateY(0);
+    animation-timing-function: ease-out;
+  }
+}
 .map-main-container-p, .recomendanos-main-container-p, .nosotros-main-container-p, .nosotros-main-container-p1, .main-container-p {
   font-family: "Architects Daughter", cursive;
   color: #000000;
@@ -81,7 +146,7 @@
   text-shadow: 5px 3px 10px #000000, 5px 3px 10px #000000;
 }
 
-.footer-logo-redes, .footer-container-redes, .footer-derechos, .footer-logo, .footer-container, .footer-box, .accordion-button ul, .container-rests, .recomendanos-main-enviar, .recomendanos-main-input, .recomendanos-main-opcions1, .recomendanos-main-opcions, .recomendanos-main-container-form, .recomendanos-main-container-info, .redes-container-links, .redes-main-container-info, .nosotros-main-container-p, .nosotros-main-container-info1, .nosotros-main-container-info, .main-section2-texts, .main-section2-imgs, .main-section2-rest-info, .cloe, .main-section1-texts, .main-section1-imgs, .main-section1-rest-info, .casa-del-te, .line, .main-section1, .main-section-videos, .main-container-text, .main-container-info, .logo-text, .logo-section, .logo-container, .nav-link, .nav-links, .nav-container-links {
+.footer-logo-redes, .footer-container-redes, .footer-derechos, .footer-logo, .footer-container, .footer-box, .accordion-button ul, .container-rests, .recomendanos-main-enviar, .recomendanos-main-input, .recomendanos-main-opcions1, .recomendanos-main-opcions, .recomendanos-main-container-form, .recomendanos-main-container-info, .redes-container-box, .redes-container-links, .redes-main-container-info, .nosotros-main-container-p, .nosotros-main-container-info1, .nosotros-main-container-info, .main-section2-texts, .main-section2-imgs, .main-section2-rest-info, .cloe, .main-section1-texts, .main-section1-imgs, .main-section1-rest-info, .casa-del-te, .line, .main-section1, .main-section-videos, .main-container-text, .main-container-info, .logo-text, .logo-section, .logo-container, .nav-link, .nav-links, .nav-container-links {
   display: flex;
 }
 
@@ -89,11 +154,11 @@
   display: block;
 }
 
-.open-nav {
+.redes-container-prev, .open-nav {
   display: none;
 }
 
-.footer-derechos, .footer-logo, .accordion-button ul, .accordion, .recomendanos-main-enviar, .recomendanos-main-opcions1, .recomendanos-main-container-form, .redes-main-container-p, .redes-main-container-info, .nosotros-main-container-p, .nosotros-main-container-info, .main-section2-imgs, .cloe, .main-section1-imgs, .casa-del-te, .line, .main-section-videos, .main-container-info, .open-nav, .body-background-img {
+.footer-derechos, .footer-logo, .accordion-button ul, .accordion, .recomendanos-main-enviar, .recomendanos-main-opcions1, .recomendanos-main-container-form, .redes-container-box, .redes-main-container-p, .redes-main-container-info, .nosotros-main-container-p, .nosotros-main-container-info, .main-section2-imgs, .cloe, .main-section1-imgs, .casa-del-te, .line, .main-section-videos, .main-container-info, .open-nav, .body-background-img {
   justify-content: center;
 }
 
@@ -113,7 +178,7 @@
   justify-items: center;
 }
 
-.footer-container-redes, .footer-logo, .container-rests, .recomendanos-main-opcions, .nosotros-main-container-info1, .main-section2-texts, .main-section2-imgs, .main-section1-texts, .main-section1-imgs, .main-section1 {
+.footer-container-redes, .footer-logo, .container-rests, .recomendanos-main-opcions, .redes-container-box, .nosotros-main-container-info1, .main-section2-texts, .main-section2-imgs, .main-section1-texts, .main-section1-imgs, .main-section1 {
   flex-direction: column;
 }
 
@@ -129,7 +194,7 @@
   flex-wrap: wrap;
 }
 
-.footer-container-redes, .footer-derechos, .footer-logo, .footer-container, .recomendanos-main-container-form, .main-section2-imgs, .box-rest2, .main-section1-imgs, .box-rest1, .line div, .logo-text, .logo-section, .nav-links, .open-nav, .nav-container-links {
+.footer-container-redes, .footer-derechos, .footer-logo, .footer-container, .recomendanos-main-container-form, .redes-container-box, .main-section2-imgs, .box-rest2, .main-section1-imgs, .box-rest1, .line div, .logo-text, .logo-section, .nav-links, .open-nav, .nav-container-links {
   align-items: center;
 }
 
@@ -151,6 +216,17 @@
 
 .main-section2-local, .main-section2-star, .main-section1-local, .main-section1-star {
   align-self: flex-start;
+}
+
+.logo-img {
+  animation-name: Animation1;
+  animation-duration: 4s;
+  animation-delay: 2s;
+  animation-iteration-count: 1;
+}
+
+.redes-container-box:hover .redes-container-prev, .nav-container-links {
+  animation: Animation2 1.2s cubic-bezier(0.39, 0.575, 0.565, 1) both;
 }
 
 .nav-container-links {
@@ -278,7 +354,7 @@
   font-size: clamp(1rem, 0.581rem + 0.654vw, 1.35rem);
   text-decoration: none;
   color: white;
-  transition: 0.5s;
+  transition: 0.3s;
 }
 .nav-link a:hover {
   background-color: #e2610a;
@@ -294,9 +370,7 @@
     color: rgba(243, 190, 130, 0.911);
   }
   .nav-link a:hover {
-    background-color: #e2610a;
     padding: 0.5rem 0.1rem;
-    border-radius: 10%;
   }
 }
 
@@ -323,13 +397,15 @@
   text-shadow: 0 -1px 4px rgba(63, 27, 3, 0.9333333333), 0 -10px 20px rgba(255, 128, 0, 0.7333333333), 0 -18px 40px rgba(255, 0, 0, 0.719), -40px -21px 0px rgba(206, 29, 29, 0);
   background-color: rgba(63, 27, 3, 0.9333333333);
   border-radius: 10%;
-  padding: 0.3rem 0.5rem 0.3rem 0.5rem;
+  padding: 0.5rem 0.5rem 0.3rem 0.5rem;
   margin: 0;
+  margin-left: 0.2rem;
 }
 
 .logo-img {
   width: clamp(3rem, 2.063rem + 2.5vw, 5rem);
   height: auto;
+  transition: 1s;
 }
 
 /*Main*/
@@ -992,7 +1068,6 @@
 
 /*Redes*/
 .redes-main-container-info {
-  background-color: rgba(184, 184, 184, 0.801);
   width: 100%;
   height: 70vh;
   padding: 2rem 0;
@@ -1036,25 +1111,76 @@
 }
 
 .redes-container-links {
+  position: relative;
   width: 100%;
-  height: 100%;
-  margin-bottom: 2rem;
+  height: auto;
+  margin: 3% 0%;
+  padding: 3% 0%;
+  background-color: rgba(187, 187, 187, 0.8784313725);
 }
 @media (max-width: 768px) {
   .redes-container-links {
     height: auto;
     width: 100%;
     z-index: 3;
-    bottom: 200px;
   }
 }
 
-.redes-container-link {
-  text-align: right;
+.redes-container-box {
+  position: relative;
   width: 10vw;
-  background-color: #ffffff;
-  border: #000000 0.2rem solid;
+  text-decoration: none;
   height: 100%;
+}
+.redes-container-box:hover .redes-container-prev {
+  display: block;
+  animation-duration: 0.5s;
+}
+
+.redes-container-link {
+  width: 10vw;
+}
+
+.redes-container-link-fb {
+  color: #3b5998;
+  margin: 0;
+  margin-top: 5%;
+  font-size: clamp(0.6rem, 0.313rem + 1.436vw, 2rem);
+  font-weight: lighter;
+  font-family: Arial, Helvetica, sans-serif;
+  border: #3b5998 0.125rem solid;
+  border-radius: 10%;
+  padding: 0% 5%;
+}
+
+.redes-container-link-ig {
+  color: orangered;
+  margin: 0;
+  margin-top: 5%;
+  font-size: clamp(0.6rem, 0.313rem + 1.436vw, 2rem);
+  font-weight: lighter;
+  font-family: Arial, Helvetica, sans-serif;
+  border: orangered 0.125rem solid;
+  border-radius: 10%;
+  padding: 0% 5%;
+}
+
+.redes-container-link-x {
+  color: #00acee;
+  margin: 0;
+  margin-top: 5%;
+  font-size: clamp(0.6rem, 0.313rem + 1.436vw, 2rem);
+  font-weight: lighter;
+  font-family: Arial, Helvetica, sans-serif;
+  border: #00acee 0.125rem solid;
+  border-radius: 10%;
+  padding: 0% 5%;
+}
+
+.redes-container-prev {
+  position: absolute;
+  border-radius: 5%;
+  width: 20vw;
 }
 
 .main-container-img1 {
@@ -1240,6 +1366,11 @@
 
 .carousel-img {
   height: 100%;
+}
+
+.carousel-button {
+  color: white;
+  font-size: 1.5rem;
 }
 
 /*Mapa*/
@@ -1451,23 +1582,13 @@
   height: 100%;
   width: 100%;
 }
-.footer-logo-redes img:nth-child(1) {
+.footer-logo-redes img {
   height: clamp(1.5rem, 0.75rem + 2vw, 3.1rem);
-  background-color: rgba(243, 190, 130, 0.9333333333);
-  border-radius: 45%;
-  border: black 0.2rem solid;
+  padding-bottom: 10%;
+  transition: 0.5s;
 }
-.footer-logo-redes img:nth-child(2) {
-  height: clamp(1.5rem, 0.75rem + 2vw, 3.1rem);
-  background-color: #DFC599;
-  border-radius: 45%;
-  border: black 0.2rem solid;
-}
-.footer-logo-redes img:nth-child(3) {
-  height: clamp(1.5rem, 0.75rem + 2vw, 3.1rem);
-  background-color: #DFC599;
-  border-radius: 45%;
-  border: black 0.2rem solid;
+.footer-logo-redes img:hover {
+  transform: translate(10px, 0);
 }
 
 /*top Botton*/
